@@ -1,0 +1,20 @@
+/* @import "../styles/partials/variables";
+@import "../styles/partials/mixins";
+
+body {
+  background-color: rgb(23, 23, 23);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+//* mixins
+@mixin cont_settings() {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+//*variables
+$head-bg-color: white; */
