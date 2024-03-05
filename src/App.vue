@@ -16,10 +16,6 @@ export default {
 
 <template>
   <navBar></navBar>
-  <h1>{{ title }}</h1>
-  <div class="antonio">
-    <span>ciao</span>
-  </div>
   <!--  <router-link
               class="nav-link"
               aria-current="page"
@@ -29,11 +25,12 @@ export default {
   <!-- <router-view></router-view> -->
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 /* @use "./styles/general.scss" as *; */
-.antonio {
-  span {
-    color: orange;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 </style>
