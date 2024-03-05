@@ -5,19 +5,19 @@ export default {
       navLinks: [
         {
           linkName: "about",
-          linkPath: "/about",
+          linkPath: "about",
         },
         {
           linkName: "portfolio",
-          linkPath: "/portfolio",
+          linkPath: "portfolio",
         },
         {
           linkName: "contacts",
-          linkPath: "/contacts",
+          linkPath: "contacts",
         },
         {
-          linkName: "App & Games",
-          linkPath: "/appandgames",
+          linkName: "app & games",
+          linkPath: "appandgames",
         },
       ],
     };
@@ -31,10 +31,22 @@ export default {
 
 <template>
   <div class="nav-bar">
-    <img id="codewhips-logo" src="/images/logo-codewhisp.png" alt="" />
+    <router-link
+      class="nav-link"
+      aria-current="page"
+      :to="{ name: 'homepage' }"
+    >
+      <img id="codewhips-logo" src="/images/logo-codewhisp.png" alt="" />
+    </router-link>
     <ul>
-      <li class="link-name" v-for="link in navLinks">
-        {{ link.linkName }}
+      <li v-for="link in navLinks">
+        <router-link
+          class="link-name"
+          aria-current="page"
+          :to="`${link.linkPath}`"
+        >
+          {{ link.linkName }}
+        </router-link>
       </li>
     </ul>
     <div class="social-container">
@@ -59,7 +71,7 @@ export default {
 }
 
 #codewhips-logo {
-  height: 100%;
+  width: 80px;
   &:hover {
     opacity: 0.8;
     cursor: pointer;
@@ -74,17 +86,19 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  li {
+    .link-name {
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      font-family: "Rubik", sans-serif;
+      margin: 0px 40px 0px 40px;
+      font-weight: 100;
+      text-decoration: none;
 
-  .link-name {
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    font-family: "Rubik", sans-serif;
-    margin: 0px 40px 0px 40px;
-    font-weight: 100;
-
-    &:hover {
-      color: orange;
-      cursor: pointer;
+      &:hover {
+        color: orange;
+        cursor: pointer;
+      }
     }
   }
 }

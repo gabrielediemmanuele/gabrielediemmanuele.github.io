@@ -1,11 +1,10 @@
 <script>
 // import MyComponent from "./components/MyComponent.vue";
 import navBar from "./components/micro-component/navBar.vue";
+
 export default {
   data() {
-    return {
-      title: "Hello world",
-    };
+    return {};
   },
 
   components: {
@@ -16,13 +15,7 @@ export default {
 
 <template>
   <navBar></navBar>
-  <!--  <router-link
-              class="nav-link"
-              aria-current="page"
-              :to="{ name: 'blog' }">
-              Blog
-            </router-link> -->
-  <!-- <router-view></router-view> -->
+  <router-view></router-view>
 </template>
 
 <style lang="scss">
