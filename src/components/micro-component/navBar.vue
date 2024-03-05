@@ -47,17 +47,23 @@ export default {
 <style lang="scss" scoped>
 .nav-bar {
   width: 100%;
-  height: 80px;
-  padding: 10px;
+  height: 100px;
+  padding: 20px 70px 20px 70px;
   background-color: rgb(3, 35, 54);
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  box-sizing: border-box;
 }
 
 #codewhips-logo {
   height: 100%;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
 }
 
 ul {
@@ -70,23 +76,28 @@ ul {
   align-items: center;
 
   .link-name {
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(255, 255, 255);
     font-family: "Rubik", sans-serif;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 40px 0px 40px;
     font-weight: 100;
 
     &:hover {
       color: orange;
+      cursor: pointer;
     }
   }
 }
+
 .social-container {
-  margin-right: 20px;
   .fa-brands {
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     margin: 0px 10px 0px 10px;
+    &:hover {
+      color: orange;
+      cursor: pointer;
+    }
   }
 }
 </style>
