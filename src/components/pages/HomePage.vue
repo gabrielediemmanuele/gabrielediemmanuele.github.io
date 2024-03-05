@@ -1,5 +1,5 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
+import CoverImage from "../ui-element/CoverImage.vue";
 
 export default {
   data() {
@@ -8,15 +8,14 @@ export default {
     };
   },
 
-  // components: {
-  //   MyComponent,
-  // },
+  components: {
+    CoverImage,
+  },
 };
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
-  home
+  <CoverImage></CoverImage>
 </template>
 
 <style lang="scss" scoped></style>

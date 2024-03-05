@@ -4,7 +4,7 @@
 export default {
   data() {
     return {
-      title: "Hello world",
+      topLayerWidth: 0,
     };
   },
 
@@ -21,48 +21,60 @@ export default {
         x = e.clientX;
       }
       this.topLayerWidth = x;
-    }
-  }
-
+    },
+  },
 };
 </script>
 
 <template>
-  <section class="split-screen" @mousemove="splitScreen" @touchmove="splitScreen">
-        <!-- Layer Right -->
-        <div class="layer right">
-          <div class="content-wrap">
-            <div class="dev-content-right">
-              <h2>&lt;coder&gt;</coder></h2>
-              <p>
-                Jr. Full-Stack Web Dev con preferenze in Front-End 👨🏻‍💻
-              </p>
-              
-            </div>
-            <div class="dev-content-left">
-              <img src="./developer.png" alt="">
-              <p class="coder-description">
-                Scrivo codice in modo metodico, pulito e organizzato, ottimizzando con l'esperienza.
-              </p>
-            </div>
-            <img class="main-img" src="./Jumbotron-Images.jpg" alt="forest" />
-          </div>
+  <section
+    class="split-screen"
+    @mousemove="splitScreen"
+    @touchmove="splitScreen"
+  >
+    <!-- Layer Right -->
+    <div class="layer right">
+      <div class="content-wrap">
+        <div class="dev-content-right">
+          <h2>&lt;coder&gt;</h2>
+          <p>Jr. Full-Stack Web Dev con preferenze in Front-End 👨🏻‍💻</p>
         </div>
-        <!-- Layer Left -->
-        <div class="layer left" :style="{ width: topLayerWidth + 'px' }">
-          <div class="content-wrap">
-            <div class="design-content-left">
-              <h2>.designer</h2>
-              <p>Product Designer in Graphic & UI/UX Design</p>
-            </div>
-            <div class="design-content-right">
-              <img src="./designer.png" alt="">
-              <p class="des-description">Realizzo prodotti con metodo, partendo dalle bozze su carta alla digitalizzazione su computer.</p>
-            </div>
-            <img class="main-img" src="./Jumbotron-Images-2.jpg" alt="city" />
-          </div>
+        <div class="dev-content-left">
+          <img src="../../../public/images/superDev.png" alt="" />
+          <p class="coder-description">
+            Scrivo codice in modo metodico, pulito e organizzato, ottimizzando
+            con l'esperienza.
+          </p>
         </div>
-      </section>
+        <img
+          class="main-img"
+          src="../../../public/images/Jumbotron-Images.jpg"
+          alt="forest"
+        />
+      </div>
+    </div>
+    <!-- Layer Left -->
+    <div class="layer left" :style="{ width: topLayerWidth + 'px' }">
+      <div class="content-wrap">
+        <div class="design-content-left">
+          <h2>.designer</h2>
+          <p>Product Designer in Graphic & UI/UX Design</p>
+        </div>
+        <div class="design-content-right">
+          <img src="../../../public/images/designer.png" alt="" />
+          <p class="des-description">
+            Realizzo prodotti con metodo, partendo dalle bozze su carta alla
+            digitalizzazione su computer.
+          </p>
+        </div>
+        <img
+          class="main-img"
+          src="../../../public/images/Jumbotron-Images-2.jpg"
+          alt="city"
+        />
+      </div>
+    </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -85,6 +97,7 @@ export default {
 .split-screen {
   position: relative;
   overflow: hidden;
+  margin-top: 15px;
 }
 
 .layer {
