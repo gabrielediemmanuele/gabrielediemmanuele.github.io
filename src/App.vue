@@ -1,6 +1,7 @@
 <script>
 // import MyComponent from "./components/MyComponent.vue";
 import navBar from "./components/micro-component/navBar.vue";
+import footerBar from "./components/micro-component/footerBar.vue";
 
 export default {
   data() {
@@ -9,6 +10,7 @@ export default {
 
   components: {
     navBar,
+    footerBar,
   },
 };
 </script>
@@ -16,6 +18,7 @@ export default {
 <template>
   <navBar></navBar>
   <router-view></router-view>
+  <footerBar></footerBar>
 </template>
 
 <style lang="scss">
