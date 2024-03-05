@@ -38,9 +38,8 @@ export default {
       </li>
     </ul>
     <div class="social-container">
-      <span>A</span>
-      <span>B</span>
-      <span>C</span>
+      <font-awesome-icon class="fa-brands" icon="fa-brands fa-linkedin" />
+      <font-awesome-icon class="fa-brands" icon="fa-brands fa-github" />
     </div>
   </div>
 </template>
@@ -56,6 +55,7 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
+
 #codewhips-logo {
   height: 100%;
 }
@@ -79,6 +79,14 @@ ul {
     &:hover {
       color: orange;
     }
+  }
+}
+.social-container {
+  margin-right: 20px;
+  .fa-brands {
+    font-size: 30px;
+    color: white;
+    margin: 0px 10px 0px 10px;
   }
 }
 </style>
