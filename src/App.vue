@@ -1,6 +1,6 @@
 <script>
 // import MyComponent from "./components/MyComponent.vue";
-// import HeaderNav from "./components/HeaderNav.vue";
+import navBar from "./components/micro-component/navBar.vue";
 export default {
   data() {
     return {
@@ -8,13 +8,14 @@ export default {
     };
   },
 
-  // components: {
-  //   MyComponent,
-  // },
+  components: {
+    navBar,
+  },
 };
 </script>
 
 <template>
+  <navBar></navBar>
   <h1>{{ title }}</h1>
   <div class="antonio">
     <span>ciao</span>
