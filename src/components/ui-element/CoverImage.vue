@@ -5,12 +5,18 @@ export default {
   data() {
     return {
       topLayerWidth: 0,
+      containerWidth: 0,
     };
   },
 
   // components: {
   //   MyComponent,
   // },
+
+  mounted() {
+    this.containerWidth = this.$el.offsetWidth; // Ottieni la larghezza del contenitore
+  },
+
   methods: {
     splitScreen(e) {
       let x;
@@ -20,7 +26,8 @@ export default {
       } else {
         x = e.clientX;
       }
-      this.topLayerWidth = x;
+      // Inverti la direzione dell'asse X
+      this.topLayerWidth = this.containerWidth - x;
     },
   },
 };
