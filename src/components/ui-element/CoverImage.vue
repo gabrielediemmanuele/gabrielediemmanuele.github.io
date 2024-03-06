@@ -49,8 +49,8 @@ export default {
         <div class="dev-content-left">
           <img src="../../../public/images/superDev.png" alt="" />
           <p class="coder-description">
-            Scrivo codice in modo metodico, pulito e organizzato, ottimizzando
-            con l'esperienza.
+            Scrivo il codice, ragionando e scomponendo i problemi e ottimizzando
+            con l'esperienza, lavoro dopo lavoro.
           </p>
         </div>
         <img
