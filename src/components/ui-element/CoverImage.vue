@@ -154,7 +154,7 @@ export default {
 
 .layer h2 {
   max-width: 9em;
-  font-size: 60px;
+  font-size: 70px;
   margin: 0px 0px 10px 0px;
   padding: 0;
 }
@@ -173,8 +173,8 @@ export default {
 
 /* Dev Content */
 .dev-content-left {
-  top: 5%;
-  left: 3%;
+  top: 10%;
+  left: 8%;
   width: 300px;
 }
 
@@ -189,8 +189,8 @@ export default {
 }
 
 .design-content-right {
-  top: 5%;
-  right: 3%;
+  top: 10%;
+  right: 8%;
   margin-left: 10%;
   width: 300px;
 }
