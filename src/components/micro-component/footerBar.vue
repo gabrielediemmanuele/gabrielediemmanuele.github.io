@@ -64,6 +64,10 @@ export default {
   align-items: center;
 
   box-sizing: border-box;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .footer-link {
