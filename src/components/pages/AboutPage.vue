@@ -31,7 +31,7 @@ export default {
       </div>
       <div class="col-6">
         <div class="image-cont">
-          <img src="../../../public/images/designer.png" alt="" />
+          <img src="../../../public/images/aboutpage.png" alt="" />
         </div>
       </div>
     </div>
@@ -67,6 +67,8 @@ export default {
       align-items: flex-end;
       img {
         width: 400px;
+        box-shadow: 0px 0px 8px 1px black;
+        border-radius: 50%;
       }
     }
   }
