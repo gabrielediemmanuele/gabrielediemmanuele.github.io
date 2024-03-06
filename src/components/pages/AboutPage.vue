@@ -58,7 +58,7 @@ export default {
   </introPage>
   <!--Image Gallery-->
   <section>
-    <div class="container-fluid">
+    <div class="container-fluid shadow">
       <div class="row">
         <div
           class="col-lg-2 col-md-4 col-sm-2 image-card"
@@ -74,16 +74,22 @@ export default {
 
 <style lang="scss" scoped>
 .container-fluid {
-  margin: 20px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
   box-sizing: border-box;
 }
+
+.container-fluid.shadow {
+  box-shadow: 0px 5px 12px -10px #000000 !important;
+}
+
 .row {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  padding: 0px 45px 0px 45px;
+  padding: 0px 45px 20px 45px;
   margin: 0 auto;
 }
+
 .image-card {
   box-shadow: 0px 0px 10px -4px rgb(81, 81, 81);
   border-radius: 10px;
