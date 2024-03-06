@@ -105,4 +105,15 @@ ul {
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  ul {
+    display: none;
+  }
+  .footer-bar {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+  }
+}
 </style>
