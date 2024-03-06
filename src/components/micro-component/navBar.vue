@@ -50,8 +50,12 @@ export default {
       </li>
     </ul>
     <div class="social-container">
-      <font-awesome-icon class="fa-brands" icon="fa-brands fa-linkedin" />
-      <font-awesome-icon class="fa-brands" icon="fa-brands fa-github" />
+      <a href="https://www.linkedin.com/in/gabriele-di-emmanuele/"
+        ><font-awesome-icon class="fa-brands" icon="fa-brands fa-linkedin"
+      /></a>
+      <a href="https://github.com/gabrielediemmanuele"
+        ><font-awesome-icon class="fa-brands" icon="fa-brands fa-github"
+      /></a>
     </div>
   </div>
 </template>
