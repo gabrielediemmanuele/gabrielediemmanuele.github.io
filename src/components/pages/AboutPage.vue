@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+  {{ title }}
 </template>
 
 <style lang="scss" scoped></style>

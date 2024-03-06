@@ -38,6 +38,7 @@ export default {
     >
       <img id="codewhips-logo" src="/images/logo-codewhisp.png" alt="" />
     </router-link>
+    <div class="hamburgher-menu"></div>
     <ul>
       <li v-for="link in navLinks">
         <router-link
@@ -116,6 +117,12 @@ ul {
       color: orange;
       cursor: pointer;
     }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  ul {
+    display: none;
   }
 }
 </style>

@@ -5,6 +5,9 @@ import "./assets/styles/global.scss";
 // Vue Router
 import { router } from "./router/router";
 
+//Bootstrap
+import * as bootstrap from "bootstrap";
+
 /* import fontawesome */
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
