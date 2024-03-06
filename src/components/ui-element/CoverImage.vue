@@ -104,7 +104,7 @@ export default {
 .split-screen {
   position: relative;
   overflow: hidden;
-  margin-top: 15px;
+  box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.45);
 }
 
 .layer {
@@ -166,7 +166,7 @@ export default {
   z-index: 1;
   position: absolute;
   top: 25%;
-  color: #222236;
+  color: rgb(3, 35, 54);
   max-width: 400px;
   text-align: center;
 }
