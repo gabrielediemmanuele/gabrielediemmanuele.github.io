@@ -54,7 +54,7 @@ export default {
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item" v-for="link in navLinks">
+          <li class="nav-item" v-for="link in navLinks" :key="link.id">
             <router-link
               class="link-name"
               aria-current="page"
@@ -107,8 +107,8 @@ export default {
 }
 
 #codewhips-logo {
-  width: 80px;
-  margin: 10px 15px 15px 50px;
+  width: 70px;
+  margin: 10px 10px 10px 50px;
   &:hover {
     opacity: 0.8;
     cursor: pointer;
@@ -125,7 +125,7 @@ ul {
   align-items: center;
   li {
     .link-name {
-      font-size: 20px;
+      font-size: 18px;
       color: rgb(255, 255, 255);
       font-family: "Rubik", sans-serif;
       margin: 0px 40px 0px 40px;

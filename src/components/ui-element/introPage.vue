@@ -21,7 +21,7 @@ export default {
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-6">
+      <div class="col-sm-12 col-md-6">
         <div class="text-cont">
           <h1>{{ title }}</h1>
           <h3>{{ subtitle }}</h3>
@@ -30,7 +30,7 @@ export default {
           </p>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-sm-12 col-md-6">
         <div class="image-cont">
           <img :src="imgPath" alt="" />
         </div>
@@ -51,12 +51,16 @@ export default {
     .text-cont {
       font-size: 20px;
       h1 {
-        font-size: 120px;
+        font-size: 100px;
       }
       h3 {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 400;
         margin: 20px 0 20px 0;
+        font-style: italic;
+      }
+      p {
+        font-size: 18px;
         font-style: italic;
       }
     }
@@ -68,7 +72,7 @@ export default {
       justify-content: center;
       align-items: flex-end;
       img {
-        width: 400px;
+        width: 70%;
         box-shadow: 0px 0px 8px 1px black;
         border-radius: 50%;
       }

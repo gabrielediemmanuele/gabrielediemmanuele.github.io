@@ -39,7 +39,7 @@ export default {
       <div id="heading">&#169; 2024 Gabriele Di Emmanuele</div>
     </router-link>
     <ul>
-      <li v-for="link in navLinks">
+      <li v-for="link in navLinks" :key="link.id">
         <router-link
           class="link-name"
           aria-current="page"
@@ -55,8 +55,7 @@ export default {
 <style lang="scss" scoped>
 .footer-bar {
   width: 100%;
-  height: 100px;
-  padding: 20px 70px 20px 70px;
+  padding: 25px 70px 25px 70px;
   background-color: rgb(11, 55, 81);
 
   display: flex;
@@ -64,15 +63,12 @@ export default {
   align-items: center;
 
   box-sizing: border-box;
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin: auto 0 0 0;
 }
 
 .footer-link {
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   color: rgb(255, 255, 255);
 
@@ -117,7 +113,7 @@ ul {
   .footer-bar {
     justify-content: center;
     align-items: center;
-    padding: 20px 20px 20px 20px;
+    padding: 15px 10px 15px 10px;
   }
 }
 </style>
