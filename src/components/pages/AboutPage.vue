@@ -18,22 +18,22 @@ export default {
       },
       aboutCardImages: [
         {
-          imagePath: "../../../public/images/Jumbotron-Images.jpg",
+          imagePath: "../../../public/images/marmore.jpg",
         },
         {
-          imagePath: "../../../public/images/Jumbotron-Images.jpg",
+          imagePath: "../../../public/images/meandlove.jpg",
         },
         {
-          imagePath: "../../../public/images/Jumbotron-Images.jpg",
+          imagePath: "../../../public/images/tumpi.jpg",
         },
         {
-          imagePath: "../../../public/images/Jumbotron-Images.jpg",
+          imagePath: "../../../public/images/ghost-rider-paint.jpg",
         },
         {
-          imagePath: "../../../public/images/Jumbotron-Images.jpg",
+          imagePath: "../../../public/images/cooking.jpg",
         },
         {
-          imagePath: "../../../public/images/Jumbotron-Images.jpg",
+          imagePath: "../../../public/images/working.jpg",
         },
       ],
     };
@@ -81,16 +81,16 @@ export default {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 45px 0px 45px;
   margin: 0 auto;
 }
 .image-card {
   box-shadow: 0px 0px 10px -4px rgb(81, 81, 81);
   border-radius: 10px;
   margin: 10px;
-  padding: 3px;
-  width: 180px;
-  height: 130px;
+  padding: 5px;
+  width: 170px;
+  height: 110px;
 
   display: flex;
   align-items: center;
@@ -98,7 +98,9 @@ export default {
 
   img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 10px;
   }
 }
 </style>
