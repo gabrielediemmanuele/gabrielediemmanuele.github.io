@@ -54,7 +54,7 @@ export default {
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item" v-for="link in navLinks" :key="link.id">
+          <li class="nav-item" v-for="(link, index) in navLinks" :key="index">
             <router-link
               class="link-name"
               aria-current="page"

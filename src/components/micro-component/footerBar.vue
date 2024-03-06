@@ -39,7 +39,7 @@ export default {
       <div id="heading">&#169; 2024 Gabriele Di Emmanuele</div>
     </router-link>
     <ul>
-      <li v-for="link in navLinks" :key="link.id">
+      <li v-for="(link, index) in navLinks" :key="index">
         <router-link
           class="link-name"
           aria-current="page"
