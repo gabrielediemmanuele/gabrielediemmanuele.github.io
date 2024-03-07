@@ -70,12 +70,21 @@ export default {
       height: 100%;
       display: flex;
       justify-content: center;
-      align-items: flex-end;
+      align-items: center;
       img {
-        width: 70%;
+        width: 80%;
         box-shadow: 0px 0px 8px 1px black;
         border-radius: 50%;
+        margin: 10px 0 10px 0;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .image-cont {
+    img {
+      width: 300px;
     }
   }
 }
