@@ -20,31 +20,68 @@ export default {
       ],
       technologiesImages: [
         {
-          imagePath: "../../../public/images/marmore.jpg",
+          imagePath: "../../../public/images/technologies/adobePhotoshop.png",
+          imageAlt: "Logo Adobe Photoshop",
         },
         {
-          imagePath: "../../../public/images/marmore.jpg",
+          imagePath: "../../../public/images/technologies/adobeIllustrator.png",
+          imageAlt: "Logo Adobe Illustrator",
         },
         {
-          imagePath: "../../../public/images/marmore.jpg",
+          imagePath: "../../../public/images/technologies/adobeXd.png",
+          imageAlt: "Logo Adobe XD",
         },
         {
-          imagePath: "../../../public/images/marmore.jpg",
+          imagePath: "../../../public/images/technologies/inDesign.png",
+          imageAlt: "Logo Adobe inDesign",
         },
         {
-          imagePath: "../../../public/images/meandlove.jpg",
+          imagePath: "../../../public/images/technologies/html5.png",
+          imageAlt: "html5 logo",
         },
         {
-          imagePath: "../../../public/images/tumpi.jpg",
+          imagePath: "../../../public/images/technologies/css.png",
+          imageAlt: "css logo",
         },
         {
-          imagePath: "../../../public/images/ghost-rider-paint.jpg",
+          imagePath: "../../../public/images/technologies/JavaScript-logo.png",
+          imageAlt: "java script logo",
         },
         {
-          imagePath: "../../../public/images/cooking.jpg",
+          imagePath: "../../../public/images/technologies/bootstrap.png",
+          imageAlt: "bootstrap logo",
         },
         {
-          imagePath: "../../../public/images/working.jpg",
+          imagePath: "../../../public/images/technologies/git.png",
+          imageAlt: "logo git",
+        },
+        {
+          imagePath: "../../../public/images/technologies/node.png",
+          imageAlt: "node js git",
+        },
+        {
+          imagePath: "../../../public/images/technologies/vuejs.png",
+          imageAlt: "logo vue js",
+        },
+        {
+          imagePath: "../../../public/images/technologies/vite.png",
+          imageAlt: "logo vite (vue)",
+        },
+        {
+          imagePath: "../../../public/images/technologies/sass.png",
+          imageAlt: "logo sass",
+        },
+        {
+          imagePath: "../../../public/images/technologies/mysql.png",
+          imageAlt: "logo my sql",
+        },
+        {
+          imagePath: "../../../public/images/technologies/PHP-logo.svg.png",
+          imageAlt: "logo php",
+        },
+        {
+          imagePath: "../../../public/images/technologies/laravel.png",
+          imageAlt: "logo laravel",
         },
       ],
     };
@@ -56,7 +93,7 @@ export default {
   <section class="skills-section">
     <!--Skills Container-->
     <div class="container-fluid">
-      <div class="row">
+      <div class="row row-skills">
         <div class="col-lg-4 col-md-4 col-sm-6 col-12">
           <div class="designer-skills common">
             <h1>{{ designerSkillsTitle }}</h1>
@@ -89,14 +126,29 @@ export default {
     </div>
   </section>
   <!--Technologies Container-->
-  <section class="technologies"></section>
+  <section class="technologies">
+    <div class="container-fluid">
+      <div class="row tech-row">
+        <div
+          class="col-1"
+          v-for="(technology, index) in technologiesImages"
+          :key="index"
+        >
+          <img :src="technology.imagePath" :alt="technology.imageAlt" />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
+/* Skills Container Style */
 .container-fluid {
-  .row {
+  .row-skills {
     display: flex;
     align-content: center;
+    box-shadow: 0px 0px 6px 1px rgb(191, 191, 191);
+    margin-bottom: 20px;
 
     .col-lg-4 {
       .common {
@@ -121,6 +173,22 @@ export default {
         img {
           width: 250px;
         }
+      }
+    }
+  }
+}
+/* Technologies Container Style */
+.container-fluid {
+  .tech-row {
+    justify-content: center;
+    margin-bottom: 20px;
+    .col-1 {
+      margin: 10px;
+
+      img {
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
       }
     }
   }
