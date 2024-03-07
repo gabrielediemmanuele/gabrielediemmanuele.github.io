@@ -1,6 +1,7 @@
 <script>
 import introPage from "../ui-element/introPage.vue";
-import aboutMeImages from "../about-page-components/about-me-images.vue";
+import aboutMeImages from "../about-page-components/aboutImagesGallery.vue";
+import aboutMeSkills from "../about-page-components/aboutMeSkills.vue";
 
 export default {
   data() {
@@ -23,6 +24,7 @@ export default {
   components: {
     introPage,
     aboutMeImages,
+    aboutMeSkills,
   },
 };
 </script>
@@ -40,21 +42,7 @@ export default {
   <aboutMeImages></aboutMeImages>
 
   <!--Skills Section -->
-  <section class="skills-section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4 col-sm-12">
-          <div class="software-cont"></div>
-        </div>
-        <div class="col-lg-4 col-sm-12">
-          <div class="developer-image-cont"></div>
-        </div>
-        <div class="col-lg-4 col-sm-12">
-          <div class="developer-skil"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <aboutMeSkills></aboutMeSkills>
 </template>
 
 <style lang="scss" scoped></style>
