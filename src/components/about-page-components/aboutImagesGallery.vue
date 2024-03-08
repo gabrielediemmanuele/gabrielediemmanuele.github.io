@@ -49,7 +49,7 @@ export default {
 
 <style lang="scss" scoped>
 .container-fluid {
-  margin: 0px 0px 20px 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 

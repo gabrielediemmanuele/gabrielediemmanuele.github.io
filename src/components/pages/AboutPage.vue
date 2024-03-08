@@ -2,6 +2,7 @@
 import introPage from "../ui-element/introPage.vue";
 import aboutMeImages from "../about-page-components/aboutImagesGallery.vue";
 import aboutMeSkills from "../about-page-components/aboutMeSkills.vue";
+import moreAboutMe from "../about-page-components/moreAboutMe.vue";
 
 export default {
   data() {
@@ -25,6 +26,7 @@ export default {
     introPage,
     aboutMeImages,
     aboutMeSkills,
+    moreAboutMe,
   },
 };
 </script>
@@ -43,6 +45,9 @@ export default {
 
   <!--Skills Section -->
   <aboutMeSkills></aboutMeSkills>
+
+  <!--More About Me-->
+  <moreAboutMe></moreAboutMe>
 </template>
 
 <style lang="scss" scoped></style>

@@ -147,7 +147,7 @@ export default {
   .row-skills {
     display: flex;
     align-content: center;
-    box-shadow: 0px 4px 5px 0px rgb(191, 191, 191);
+    box-shadow: 0px 3px 7px 0px rgb(191, 191, 191, 0.3);
     margin-bottom: 20px;
 
     .col-lg-4 {
