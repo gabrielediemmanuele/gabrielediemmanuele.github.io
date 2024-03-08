@@ -7,13 +7,13 @@ export default {
       moreAboutMeTitle: "Altro su di me",
       moareAboutMe: [
         "Oltre al disegno, ho studiato 3D 🎨",
-        "Preferisco ambienti naturali 🏞",
+        "Preferisco ambienti naturali ⛺",
         "Pratico Yoga e Mindfulness 🧘🏻‍♂️",
         "pizza, Pizza, PIZZA! 🍕",
-        "Ho finito più di 300 videogames 🕹",
+        "Ho finito più di 300 videogames 🎮",
         "Mi piace cucinare 👨🏼‍🍳",
         "Allenamento almeno 3 volte a settimana 🏋🏻‍♂️",
-        "Tanto altro",
+        "Tanto altro 😁",
       ],
     };
   },
@@ -63,6 +63,7 @@ export default {
       justify-content: center;
       align-items: center;
       .common {
+        margin: 30px 0px 30px 0px;
         h1 {
           color: orange;
         }
