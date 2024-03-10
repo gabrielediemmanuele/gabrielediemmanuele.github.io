@@ -1,12 +1,14 @@
 <script>
 import introPage from "../ui-element/introPage.vue";
+import worksContainer from "../portfolio-page-components/worksContainer.vue";
 
 export default {
   data() {
     return {
       about: {
         title: ".portfolio",
-        subtitle: "Date un occhiata ai miei ultimi lavori e studi.",
+        subtitle:
+          "Qui trovi i miei progetti, lavori e studi come Dev e Designer.",
         description:
           "Nel mio portfolio troverete lavori e casi di studio sia Front-End che Back-End oltre che progetti personali \
           e lavori di Graphic Design alcuni dei quali sono entrati in commercio. Buona visione.",
@@ -18,6 +20,7 @@ export default {
 
   components: {
     introPage,
+    worksContainer,
   },
 };
 </script>
@@ -33,6 +36,7 @@ export default {
     :rectangular="true"
   >
   </introPage>
+  <worksContainer> </worksContainer>
 </template>
 
 <style lang="scss" scoped></style>

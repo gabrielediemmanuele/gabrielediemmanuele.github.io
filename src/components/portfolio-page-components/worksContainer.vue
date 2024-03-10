@@ -1,5 +1,5 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
+import card from "../ui-element/card.vue";
 
 export default {
   data() {
@@ -8,14 +8,28 @@ export default {
     };
   },
 
-  // components: {
-  //   MyComponent,
-  // },
+  components: {
+    card,
+  },
 };
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+  <!-- My portfolio works -->
+  <section class="myWorks">
+    <div class="container-fluid portfolio-cont">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <card></card>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.portfolio-cont {
+  padding-top: 20px;
+  box-shadow: inset 0px 0px 5px 2px rgb(0, 0, 0, 0.5);
+}
+</style>
