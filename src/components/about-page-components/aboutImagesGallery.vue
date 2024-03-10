@@ -60,6 +60,7 @@ export default {
 .row.images-gallery {
   display: flex;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   padding: 0px 45px 20px 45px;
   margin: 0 auto;

@@ -38,6 +38,8 @@ export default {
     :subtitle="about.subtitle"
     :description="about.description"
     :imgPath="about.introImagePath"
+    :circular="true"
+    :rectangular="false"
   >
   </introPage>
   <!--Image Gallery-->

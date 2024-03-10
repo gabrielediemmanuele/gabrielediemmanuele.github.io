@@ -10,8 +10,17 @@ export default {
     subtitle: String,
     description: String,
     imgPath: String,
+    circular: Boolean,
+    rectangular: Boolean,
   },
-
+  computed: {
+    imageClasses() {
+      return {
+        "circular-image": this.circular,
+        "rectangular-image": this.rectangular,
+      };
+    },
+  },
   // components: {
   //   MyComponent,
   // },
@@ -32,7 +41,7 @@ export default {
       </div>
       <div class="col-sm-12 col-md-6">
         <div class="image-cont">
-          <img :src="imgPath" alt="" />
+          <img :src="imgPath" :class="imageClasses" alt="Immagine Gabriele" />
         </div>
       </div>
     </div>
@@ -71,10 +80,16 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-      img {
+      .circular-image {
         width: 80%;
         box-shadow: 0px 0px 8px 1px black;
         border-radius: 50%;
+        margin: 10px 0 10px 0;
+        object-fit: cover;
+      }
+      .rectangular-image {
+        width: 80%;
+        box-shadow: 0px 0px 8px 1px black;
         margin: 10px 0 10px 0;
       }
     }
