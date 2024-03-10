@@ -89,7 +89,6 @@ export default {
       }
       .rectangular-image {
         width: 80%;
-        box-shadow: 0px 0px 8px 1px black;
         margin: 10px 0 10px 0;
       }
     }

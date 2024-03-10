@@ -8,11 +8,10 @@ export default {
         title: ".portfolio",
         subtitle: "Date un occhiata ai miei ultimi lavori e studi.",
         description:
-          "Ho iniziato il percorso come Sviluppatore Web in Boolean,\
-          in questa sezione troverete molti dei miei lavori e casi di studi svolti, sia Front-End che Back-End,\
-          all'interno del corso. Questa sezione sarà aggiornata, ma altri miei lavori personali sono presenti su App & Games!\
-          A seguito dei lavori come Web Dev, accompagno anche alcuni dei miei lavori come Graphic Designer. Buona visione!",
-        introImagePath: "../../../public/images/ghost-rider-paint.jpg",
+          "Nel mio portfolio troverete lavori e casi di studio sia Front-End che Back-End oltre che progetti personali \
+          e lavori di Graphic Design alcuni dei quali sono entrati in commercio. Buona visione.",
+        introImagePath:
+          "../../../public/images/portfolio/portoflio-cover-image.png",
       },
     };
   },

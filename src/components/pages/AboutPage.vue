@@ -15,7 +15,7 @@ export default {
           "Fin da bambino, ho sempre avuto una passione e predisposizione per la creatività. \
            Ho inziato disegnando i personaggi di videogames e film, crescendo mi sono cimentato \
            nel Graphic Design in autonomia e infine, ho unito entrambi i mondi sul codice, \
-           specializzandomi come !Jr Full-Stack Web-Developer con una predisposizione per il Front-End.\
+           specializzandomi come !Jr Full-Stack Web-Developer presso Boolean con una predisposizione per il Front-End.\
            Oltre il codig, mi piace fare tanto altro! Scoprilo qui sotto!",
         introImagePath: "../../../public/images/aboutpage.png",
       },
