@@ -6,7 +6,7 @@ export default {
     return {
       moreAboutMeTitle: "Altro su di me",
       moareAboutMe: [
-        "Oltre al disegno, ho studiato 3D 🎨",
+        "Oltre al disegno, ho studiato un pò di 3D 🎨",
         "Preferisco ambienti naturali ⛺",
         "Pratico Yoga e Mindfulness 🧘🏻‍♂️",
         "pizza, Pizza, PIZZA! 🍕",
@@ -25,7 +25,9 @@ export default {
     <!--More About Me-->
     <div class="container-fluid">
       <div class="row row-skills">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div
+          class="col-lg-6 col-md-6 col-sm-12 col-12 order-1 order-sm-1 order-md-0 align-items-end"
+        >
           <div class="more-about-image">
             <img
               src="../../../public/images/Mokujin-front-lateral-view.png"
@@ -33,7 +35,9 @@ export default {
             />
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div
+          class="col-lg-6 col-md-6 col-sm-12 col-12 order-0 order-sm-0 order-md-1 align-items-center"
+        >
           <div class="more-about-cont common">
             <h1>{{ moreAboutMeTitle }}</h1>
             <ul>
@@ -61,9 +65,9 @@ export default {
     .col-lg-6 {
       display: flex;
       justify-content: center;
-      align-items: center;
       .common {
         margin: 30px 0px 30px 0px;
+
         h1 {
           color: orange;
         }
@@ -91,5 +95,7 @@ export default {
       }
     }
   }
+}
+@media screen and (max-width: 768px) {
 }
 </style>
