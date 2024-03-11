@@ -4,7 +4,32 @@ import card from "../ui-element/card.vue";
 export default {
   data() {
     return {
-      title: "Hello world",
+      projects: [
+        {
+          projectImage: "",
+          projectTitle: "",
+          projectType: "",
+          projectRoute: "",
+        },
+        {
+          projectImage: "",
+          projectTitle: "",
+          projectType: "",
+          projectRoute: "",
+        },
+        {
+          projectImage: "",
+          projectTitle: "",
+          projectType: "",
+          projectRoute: "",
+        },
+        {
+          projectImage: "",
+          projectTitle: "",
+          projectType: "",
+          projectRoute: "",
+        },
+      ],
     };
   },
 
@@ -19,7 +44,7 @@ export default {
   <section class="myWorks">
     <div class="container-fluid portfolio-cont">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <card></card>
         </div>
       </div>
@@ -30,6 +55,10 @@ export default {
 <style lang="scss" scoped>
 .portfolio-cont {
   padding-top: 20px;
-  box-shadow: inset 0px 0px 5px 2px rgb(0, 0, 0, 0.5);
+  //box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
 }
 </style>
