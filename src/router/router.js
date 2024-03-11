@@ -6,6 +6,9 @@ import ContactsPage from "../components/pages/ContactsPage.vue";
 import PortfolioPage from "../components/pages/PortfolioPage.vue";
 import AppAndGamesPage from "../components/pages/AppAndGamesPage.vue";
 
+/* Projects Pages  */
+import frontEndBegin from "../components/portfolio-page-components/projects-pages/frontEndBegin.vue";
+
 const router = createRouter({
   history: createWebHistory(),
 
@@ -24,6 +27,11 @@ const router = createRouter({
       name: "portfolio",
       path: "/portfolio",
       component: PortfolioPage,
+    },
+    {
+      name: "frontEndBegin",
+      path: "/frontEndBegin",
+      component: frontEndBegin,
     },
     {
       name: "contacts",
