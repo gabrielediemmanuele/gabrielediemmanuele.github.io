@@ -10,7 +10,7 @@ export default {
             "../../../public/images/Front-End-Begin/cover-frontend-project.png",
           projectTitle: "Front-End-Begin",
           projectDescription: "Basi HTML, CSS, Bootstrap",
-          projectRoute: "",
+          projectRoute: "frontEndBegin",
         },
         {
           projectImage:
@@ -58,7 +58,7 @@ export default {
             :cardImage="project.projectImage"
             :cardTitle="project.projectTitle"
             :cardDescription="project.projectDescription"
-            :cardRoute="projectRoute"
+            :cardRoute="project.projectRoute"
           ></card>
         </div>
       </div>
