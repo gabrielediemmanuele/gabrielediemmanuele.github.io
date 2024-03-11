@@ -19,22 +19,21 @@ export default {
 
 <template>
   <div class="card">
-    <img src="../../../public/images/Jumbotron-Images-2.jpg" alt="" />
+    <img :src="cardImage" alt="" />
     <div class="card-contents">
       <div class="card-text">
-        <h3>titolo</h3>
-        <span>breve descrizione</span>
+        <h3>{{ cardTitle }}</h3>
+        <span>{{ cardDescription }}</span>
       </div>
-      <button class="btn">></button>
+      <button class="btn" :to="cardRoute">></button>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .card {
-  width: 100% / 3;
   margin: 30px 15px;
-  padding: 15px;
+  padding: 10px;
   box-sizing: border-box;
   box-shadow: 0px 0px 5px -1px rgb(0, 0, 0, 0.3);
   transition: transform 0.2s; /* Animation */
