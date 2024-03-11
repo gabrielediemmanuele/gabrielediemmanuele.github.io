@@ -1,11 +1,7 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
-
 export default {
   data() {
-    return {
-      //title: "Hello elite",
-    };
+    return {};
   },
 
   props: {
@@ -25,7 +21,9 @@ export default {
         <h3>{{ cardTitle }}</h3>
         <span>{{ cardDescription }}</span>
       </div>
-      <button class="btn" :to="cardRoute">></button>
+      <router-link :to="cardRoute" class="router-card"
+        ><button class="btn">></button></router-link
+      >
     </div>
   </div>
 </template>
@@ -41,8 +39,11 @@ export default {
   &:hover {
     transform: scale(1.02);
     .card-contents {
-      .btn {
-        display: block;
+      .router-card {
+        text-decoration: none;
+        .btn {
+          display: block;
+        }
       }
     }
   }
