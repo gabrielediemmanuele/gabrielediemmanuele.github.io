@@ -17,21 +17,21 @@ export default {
             "../../../public/images/Front-End-Advanced/cover-projects-front-advanced.png",
           projectTitle: "Front-End-Advaced",
           projectDescription: "HTML, CSS, JS, Vue + Vite, API",
-          projectRoute: "",
+          projectRoute: "frontEndAdvanced",
         },
         {
           projectImage:
             "../../../public/images/Front-End-Advanced/cover-projects-anidio.png",
           projectTitle: "Anidio",
           projectDescription: "HTML, CSS, JS, VUE + VITE",
-          projectRoute: "",
+          projectRoute: "anidio",
         },
         {
           projectImage:
             "../../../public/images/Deliveboo/cover-project-deliveboo.png",
           projectTitle: "DeliveBoo",
           projectDescription: "Front-End - Back-End",
-          projectRoute: "",
+          projectRoute: "deliveboo",
         },
       ],
     };

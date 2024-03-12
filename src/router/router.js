@@ -8,6 +8,9 @@ import AppAndGamesPage from "../components/pages/AppAndGamesPage.vue";
 
 /* Projects Pages  */
 import frontEndBegin from "../components/portfolio-page-components/projects-pages/frontEndBegin.vue";
+import frontEndAdvanced from "../components/portfolio-page-components/projects-pages/frontEndAdvanced.vue";
+import anidio from "../components/portfolio-page-components/projects-pages/anidio.vue";
+import deliveboo from "../components/portfolio-page-components/projects-pages/deliveboo.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -32,6 +35,21 @@ const router = createRouter({
       name: "frontEndBegin",
       path: "/frontEndBegin",
       component: frontEndBegin,
+    },
+    {
+      name: "frontEndAdvanced",
+      path: "/frontEndAdvanced",
+      component: frontEndAdvanced,
+    },
+    {
+      name: "anidio",
+      path: "/anidio",
+      component: anidio,
+    },
+    {
+      name: "deliveboo",
+      path: "/deliveboo",
+      component: deliveboo,
     },
     {
       name: "contacts",
