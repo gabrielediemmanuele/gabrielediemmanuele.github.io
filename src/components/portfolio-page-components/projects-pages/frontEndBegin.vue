@@ -15,6 +15,40 @@ export default {
         introImagePath:
           "../../../../public/images/Front-End-Begin/portfolio-front-end-mix.png",
       },
+      project: {
+        objParagraph: "bla",
+        functionsParagraph: "bla",
+        videoPath:
+          "../../../../public/images/Front-End-Begin/start-front-end.mp4",
+      },
+      cards: [
+        {
+          cardImage: "../../../../public/images/Front-End-Begin/zalando.png",
+          cardTitle: "bla",
+          cardDescription: "bla",
+        },
+        {
+          cardImage: "../../../../public/images/Front-End-Begin/discord.png",
+          cardTitle: "bla",
+          cardDescription: "bla",
+        },
+        {
+          cardImage: "../../../../public/images/Front-End-Begin/dropbox.png",
+          cardTitle: "bla",
+          cardDescription: "bla",
+        },
+        {
+          cardImage: "../../../../public/images/Front-End-Begin/spotify.png",
+          cardTitle: "bla",
+          cardDescription: "bla",
+        },
+        {
+          cardImage:
+            "../../../../public/images/Front-End-Begin/layout-bootstrap.png",
+          cardTitle: "bla",
+          cardDescription: "bla",
+        },
+      ],
     };
   },
 
@@ -35,7 +69,12 @@ export default {
     :rectangular="true"
   ></introPage>
 
-  <projectLayout></projectLayout>
+  <projectLayout
+    :objParagraph="project.objParagraph"
+    :functionsParagraph="project.functionsParagraph"
+    :videoPath="project.videoPath"
+    :cards="cards"
+  ></projectLayout>
 </template>
 
 <style lang="scss" scoped></style>

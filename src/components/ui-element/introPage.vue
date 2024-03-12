@@ -60,7 +60,7 @@ export default {
     .text-cont {
       font-size: 20px;
       h1 {
-        font-size: 100px;
+        font-size: 80px;
       }
       h3 {
         font-size: 30px;

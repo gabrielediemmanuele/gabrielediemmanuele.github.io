@@ -6,9 +6,12 @@ export default {
     };
   },
 
-  // components: {
-  //   MyComponent,
-  // },
+  props: {
+    objParagraph: String,
+    functionsParagraph: String,
+    videoPath: String,
+    cards: Array,
+  },
 };
 </script>
 
@@ -18,10 +21,7 @@ export default {
     <div class="container-fluid objectives-cont">
       <h2 class="obj-title">Obbiettivi</h2>
       <p class="obj-paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        ipsum sit mollitia quia, eum, itaque cumque consectetur provident enim
-        inventore amet quo quam culpa? Iusto qui consequatur doloribus eius
-        alias!
+        {{ objParagraph }}
       </p>
     </div>
   </section>
@@ -32,18 +32,12 @@ export default {
         <div class="functionality-text col-lg-6 col-md-6 col-sm-12 col-12 p-4">
           <h3 class="functions-title">Funzionalità</h3>
           <p class="functions-paragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
-            labore magnam fugiat quisquam error excepturi, est laboriosam cum
-            perspiciatis culpa inventore incidunt dolorem. Dolorum dolore, minus
-            eveniet ad reiciendis corrupti!
+            {{ functionsParagraph }}
           </p>
         </div>
         <div class="video-cont col-lg-6 col-md-6 col-sm-12 col-12 p-4">
           <video controls class="videoplayer">
-            <source
-              src="../../../public/images/Front-End-Begin/start-front-end.mp4"
-              type="video/mp4"
-            />
+            <source :src="videoPath" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -53,44 +47,24 @@ export default {
   <section class="images-section">
     <div class="container-fluid images-cont">
       <h2 class="text fs-1 text-center">Galleria</h2>
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-          <div class="card" style="width: 18rem">
+      <span>
+        Nota Importante: Per visualizzare le immagini, tasto destro del mouse
+        sull'immagine e cliccare su "Apri immagine in un'altra scheda"</span
+      >
+      <div class="row gallery-row">
+        <div
+          v-for="(card, index) in cards"
+          :key="index"
+          class="col-lg-3 col-md-4 col-sm-6 col-12"
+        >
+          <div class="card">
             <!--   Card with image  -->
-            <img
-              src="../../../public/images/Front-End-Begin/zalando.png"
-              class="card-img-top"
-              alt="..."
-            />
+            <img :src="card.cardImage" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">{{ card.cardTitle }}</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                {{ card.cardDescription }}
               </p>
-              <a
-                href="http://localhost:5173/public/images/Front-End-Begin/zalando.png"
-                class="btn btn-primary"
-                >Go somewhere</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-          <div class="card" style="width: 18rem">
-            <!--   Card with image  -->
-            <img
-              src="../../../public/images/Front-End-Begin/discord.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
@@ -107,27 +81,42 @@ export default {
   color: rgb(3, 35, 54);
   margin: 30px auto;
 }
-.functions-cont,
-.images-cont {
+
+.functions-cont {
   padding: 20px;
 }
-h2.text {
-  color: orange;
-}
-.images-cont {
-  background-color: rgb(57, 68, 117);
-}
+
 .videoplayer {
   width: 100%;
   border-radius: 20px;
   box-shadow: 0px 0px 6px 1px rgba(136, 136, 136, 0.5);
 }
-.row {
+
+.images-cont {
+  background-color: rgb(57, 68, 117);
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  padding: 30px;
+  h2.text {
+    color: orange;
+  }
+  span {
+    color: white;
+    font-style: italic;
+    font-weight: 200;
+  }
+
+  .gallery-row {
+    padding: 30px;
+    .col-lg-3 {
+    }
+  }
 }
 .card {
+  width: 250px;
+  margin: 20px 0;
   box-shadow: 0px 0px 8px -1px rgb(0, 0, 0);
-  margin: 20px;
 }
 .card-img-top {
   width: 100%;
