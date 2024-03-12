@@ -40,7 +40,10 @@ export default {
         </div>
         <div class="video-cont col-lg-6 col-md-6 col-sm-12 col-12 p-4">
           <video controls class="videoplayer">
-            <source src="" type="video/mp4" />
+            <source
+              src="../../../public/images/Front-End-Begin/start-front-end.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
       </div>
