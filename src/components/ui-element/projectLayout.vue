@@ -77,7 +77,7 @@ export default {
 .objectives-cont {
   background-color: rgb(237, 237, 237);
   padding: 30px 60px;
-  text-align: center;
+  text-align: left;
   color: rgb(3, 35, 54);
   margin: 30px auto;
 }
@@ -117,6 +117,13 @@ export default {
   width: 250px;
   margin: 20px 0;
   box-shadow: 0px 0px 8px -1px rgb(0, 0, 0);
+  padding: 5px !important;
+  .card-text {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    color: gray;
+  }
 }
 .card-img-top {
   width: 100%;
