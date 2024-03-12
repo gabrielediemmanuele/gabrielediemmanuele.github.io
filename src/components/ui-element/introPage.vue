@@ -55,7 +55,7 @@ export default {
   color: rgb(3, 35, 54);
   .row {
     border-bottom: 1px solid rgb(172, 172, 172);
-    padding-bottom: 30px;
+    padding: 30px 0;
 
     .text-cont {
       font-size: 20px;
