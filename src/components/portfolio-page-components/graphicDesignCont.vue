@@ -48,25 +48,135 @@ export default {
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="6"
+            aria-label="Slide 7"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="7"
+            aria-label="Slide 8"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="8"
+            aria-label="Slide 9"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="9"
+            aria-label="Slide 10"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="10"
+            aria-label="Slide 11"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="11"
+            aria-label="Slide 12"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="../../../public/images/graphic-design/Anaglyph 03.jpg"
+              src="../../../public/images/graphic-design/3d.jpg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../../../public/images/graphic-design/Brush 06.jpg"
+              src="../../../public/images/graphic-design/chainbrush.jpg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../../../public/images/graphic-design/Color Range Exercise.jpg"
+              src="../../../public/images/graphic-design/double-exposure.jpg"
+              class="d-block"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../../../public/images/graphic-design/deep-forest-book.jpg"
+              class="d-block"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../../../public/images/graphic-design/bonny-herbs.png"
+              class="d-block"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../../../public/images/graphic-design/flux-sketch.jpg"
+              class="d-block"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../../../public/images/graphic-design/flux-wallpaper.jpg"
+              class="d-block"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../../../public/images/graphic-design/flux-mokups.jpg"
+              class="d-block"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../../../public/images/graphic-design/postcard.jpg"
+              class="d-block"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../../../public/images/graphic-design/supersmoothies1.jpg"
+              class="d-block"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../../../public/images/graphic-design/supersmoothies2.jpg"
               class="d-block"
               alt="..."
             />
