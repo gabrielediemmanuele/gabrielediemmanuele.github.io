@@ -1,7 +1,7 @@
 <script>
 import introPage from "../ui-element/introPage.vue";
 import worksContainer from "../portfolio-page-components/worksContainer.vue";
-
+import graphicDesignCont from "../portfolio-page-components/graphicDesignCont.vue";
 export default {
   data() {
     return {
@@ -21,6 +21,7 @@ export default {
   components: {
     introPage,
     worksContainer,
+    graphicDesignCont,
   },
 };
 </script>
@@ -36,7 +37,10 @@ export default {
     :rectangular="true"
   >
   </introPage>
+  <!--  Projects cards  -->
   <worksContainer> </worksContainer>
+  <!--   Graphic Design Section -->
+  <graphicDesignCont></graphicDesignCont>
 </template>
 
 <style lang="scss" scoped></style>
