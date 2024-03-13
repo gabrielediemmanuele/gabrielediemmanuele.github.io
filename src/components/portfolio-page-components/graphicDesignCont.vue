@@ -22,6 +22,9 @@ export default {
       <p>
         Di seguito, un carosello per mostrare alcuni dei miei prodotti di
         Graphic Design, molti dei quali sono prodotti entrati in commercio!
+        <br />
+        Non tutti i miei lavori sono presenti in slider, per maggiori
+        informazioni, trovate il mio CV e portfolio nella sezione Contatti.
       </p>
     </div>
     <!-- Carousel Bootstrap-->
