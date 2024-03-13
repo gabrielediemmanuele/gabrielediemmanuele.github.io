@@ -50,7 +50,8 @@ export default {
       <h1 class="portfolio-title text-center">Web. Dev. Projects</h1>
       <p class="text-center">
         Nota Bene: tutte le immagini, loghi, riferimenti, fonts, sono solo a
-        scopo di studio e non commerciale!
+        scopo di studio e non commerciale! <br />
+        Altri lavori verrano caricati in futuro!
       </p>
       <div class="row">
         <div
@@ -73,14 +74,17 @@ export default {
 <style lang="scss" scoped>
 .portfolio-cont {
   color: rgb(3, 35, 54);
-  padding-top: 20px;
+  padding: 50px;
+
   //box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
   p {
     font-style: italic;
   }
-  .port .row {
+  .row {
     display: flex;
     flex-direction: row;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
   }
 }
 </style>
