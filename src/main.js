@@ -13,8 +13,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faLinkedin, faGithub);
+library.add(faLinkedin, faGithub, faEnvelope);
 
 import App from "./App.vue";
 
