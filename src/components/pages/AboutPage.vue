@@ -43,7 +43,6 @@ export default {
     :circular="true"
     :rectangular="false"
   >
-    <img src="../../../dist/assets/aboutpage.png" alt="" />
   </introPage>
   <!--Image Gallery-->
   <aboutMeImages></aboutMeImages>

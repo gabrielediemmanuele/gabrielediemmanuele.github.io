@@ -13,7 +13,7 @@ export default {
           dei miglioramenti avuti nel tempo (e sicuramente c'è ancora tanto da imparare) \
           ma vedere l'inizio del cammino, mostra anche quanta strada ho fatto!",
         introImagePath:
-          "../../../../public/images/Front-End-Begin/portfolio-front-end-mix.png",
+          "../../../../dist/images/Front-End-Begin/portfolio-front-end-mix.png",
       },
       project: {
         objParagraph:
@@ -30,32 +30,32 @@ export default {
         e creare layout complessi. In conclusione, un layout ispirato proprio a Boolean realizzato con Bootstrap e l'interfaccia di Spotify\
         svolta per scelta solo in HTML e CSS e l'utilizzo di media Query realizzate da 0 il cui focus era proprio creare app responsive con menù ed elementi a scomparsa.",
         videoPath:
-          "../../../../public/images/Front-End-Begin/start-front-end.mp4",
+          "../../../../dist/images/Front-End-Begin/start-front-end.mp4",
       },
       cards: [
         {
-          cardImage: "../../../../public/images/Front-End-Begin/zalando.png",
+          cardImage: "../../../../dist/images/Front-End-Begin/zalando.png",
           cardTitle: "Zalando",
           cardDescription: "HTML, CSS, :hover, position",
         },
         {
-          cardImage: "../../../../public/images/Front-End-Begin/discord.png",
+          cardImage: "../../../../dist/images/Front-End-Begin/discord.png",
           cardTitle: "Discord",
           cardDescription: "HTML, CSS, Flex",
         },
         {
-          cardImage: "../../../../public/images/Front-End-Begin/dropbox.png",
+          cardImage: "../../../../dist/images/Front-End-Begin/dropbox.png",
           cardTitle: "Dropbox",
           cardDescription: "HTML, CSS, Flex",
         },
         {
-          cardImage: "../../../../public/images/Front-End-Begin/spotify.png",
+          cardImage: "../../../../dist/images/Front-End-Begin/spotify.png",
           cardTitle: "Spotify",
           cardDescription: "HTML, CSS, responsive",
         },
         {
           cardImage:
-            "../../../../public/images/Front-End-Begin/layout-bootstrap.png",
+            "../../../../dist/images/Front-End-Begin/layout-bootstrap.png",
           cardTitle: "bla",
           cardDescription: "HTML, CSS, Bootstrap",
         },

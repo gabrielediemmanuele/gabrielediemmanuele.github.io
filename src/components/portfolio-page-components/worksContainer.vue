@@ -7,28 +7,28 @@ export default {
       projects: [
         {
           projectImage:
-            "../../../public/images/Front-End-Begin/cover-frontend-project.png",
+            "../../../dist/images/Front-End-Begin/cover-frontend-project.png",
           projectTitle: "Front-End-Begin",
           projectDescription: "Basi HTML, CSS, Bootstrap",
           projectRoute: "frontEndBegin",
         },
         {
           projectImage:
-            "../../../public/images/Front-End-Advanced/cover-projects-front-advanced.png",
+            "../../../dist/images/Front-End-Advanced/cover-projects-front-advanced.png",
           projectTitle: "Front-End-Advaced",
           projectDescription: "HTML, CSS, Js, Vue + Vite, API",
           projectRoute: "frontEndAdvanced",
         },
         {
           projectImage:
-            "../../../public/images/Front-End-Advanced/cover-projects-anidio.png",
+            "../../../dist/images/Front-End-Advanced/cover-projects-anidio.png",
           projectTitle: "Anidio",
           projectDescription: "HTML, CSS, Js, Vue + Vite",
           projectRoute: "anidio",
         },
         {
           projectImage:
-            "../../../public/images/Deliveboo/cover-project-deliveboo.png",
+            "../../../dist/images/Deliveboo/cover-project-deliveboo.png",
           projectTitle: "DeliveBoo",
           projectDescription: "Front-End (Vue), Back-End (Laravel)",
           projectRoute: "deliveboo",
