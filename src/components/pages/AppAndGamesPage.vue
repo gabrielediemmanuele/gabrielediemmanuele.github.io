@@ -4,7 +4,7 @@
 export default {
   data() {
     return {
-      title: "App and games",
+      title: "Ciao",
     };
   },
 
