@@ -12,7 +12,7 @@ export default {
       ],
       developerSkillsTitle: "Coder 👨🏻‍💻",
       developerSkills: [
-        "Full-Stack developer",
+        "Full-Stack Web Developer",
         "Front-End Addict",
         "HTML / CSS",
         "Java Script Souls Like",

@@ -44,24 +44,25 @@ export default {
             <div class="accordion-body">
               Come detto, sono "nato" artista. In realtà il mio rapporto con il
               mondo videoludico, ha contribuito a ispirarmi in un percorso come
-              disegnatore. Dopo anni a studiare come autodidatta, capii che non
-              era una cosa che avrei voluto fare come lavoro. Intanto, essendo
-              diplomato come Grafico Pubblicitario, dopo qualche anno al termine
-              della scuola, ho potuto lavorare in un negozio di Grafica. Con i
-              soldi che guadagnavo, pagavo dei corsi Online per migliorare le
-              mie capacità. La mattina studiavo, il pomeriggio andavo al lavoro
-              e col tempo ho imparato tante cose ma nel mentre anche il mondo
-              della Grafica cambiava. Realizzai che solo con la Grafica, non
-              sarei andato lontano e un giorno, casualmente, scoprii di Boolean,
-              un corso in Full-Stack Web-Developer intensivo di 6 mesi. A primo
-              acchito, non era facile ricominciare qualcosa da 0, ma non sapevo
-              che sarebbe stata la scelta migliore non solo a livello
-              lavorativo, ma anche per i bisogni della mia persona. Pur non
-              sapendo nulla di programmazione, decisi di fare le prime 20 ore
-              gratuite e al termine, decisi di iscrivermi. Dopo 6 mesi, pieni di
-              sacrifici, impegno, dedizione e perseveranza, eccomi, sono un
-              Junior Full-Stack Web Developer che da 0 ha imparato tanto e ha
-              ancora molto da imparare 😁.
+              disegnatore. Dopo anni di studio da autodidatta, capii che non era
+              una cosa che avrei voluto fare come lavoro ma come hobby. Intanto,
+              essendo diplomato come Grafico Pubblicitario, dopo qualche anno al
+              termine della scuola, ho potuto lavorare in un negozio di Grafica.
+              Con i soldi che guadagnavo, pagavo dei corsi Online per migliorare
+              le mie capacità. La mattina studiavo, il pomeriggio andavo al
+              lavoro e col tempo ho imparato tante cose ma nel mentre anche il
+              mondo della Grafica cambiava. Realizzai che solo con la Grafica,
+              non sarei andato lontano e un giorno, casualmente, scoprii
+              Boolean, un corso in Full-Stack Web-Developer intensivo di 6 mesi.
+              A primo acchito, il pensiero di cominciare un nuovo percorso da 0
+              mi intimoriva, ma non sapevo che sarebbe stata la scelta migliore
+              non solo a livello lavorativo, ma anche per i bisogni della mia
+              persona. Pur non sapendo nulla di programmazione, decisi di fare
+              le prime 20 ore gratuite e al termine, essendo stupito di quante
+              similitudinici ci fossero col mio percorso di grafico, decisi di
+              iscrivermi. Dopo 6 mesi, pieni di sacrifici, impegno, dedizione e
+              perseveranza, eccomi, sono un Junior Full-Stack Web Developer che
+              da 0 ha imparato tanto e ha ancora molto da imparare 😁.
             </div>
           </div>
         </div>
@@ -75,7 +76,7 @@ export default {
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              Si, ok. Sono un Web Developer, ma cosa mi motiva a continuare?
+              Si, sono un Web Developer, ma cosa mi motiva a continuare?
             </button>
           </h2>
           <div
@@ -87,7 +88,7 @@ export default {
               Diventare un Web Developer per me ha significato tante cose. Prima
               di tutto, avere un vero mestiere tra le mani, ma cosa più
               importante, mi ha permesso di unire tutti i miei "mondi". La
-              fantasia e le mia bilità nel disegno, le mie conoscenze sul
+              fantasia e le mia abilità nel disegno, le mie conoscenze sul
               graphic design unite al metodo e alla logica, al pensiero astratto
               che si deve avere in programmazione. Perché contino? <br />
               Perché quando inizio a scrivere codice al mattino alle 8:30, senza
@@ -97,7 +98,8 @@ export default {
               la nostra passione. Per me non è solo una questione di lavoro o di
               soldi, ma anche di definirmi come persona e di fare qualcosa che
               mi faccia stare bene con me stesso e che mi dia soddisfazioni e
-              onestamente, quanto mi diverto a fare Front-End!!
+              onestamente, quanto mi diverto a fare Front-End! Ma anche il
+              Back-End ha le sue sfaccettature eh!
             </div>
           </div>
         </div>
@@ -120,10 +122,13 @@ export default {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              Il mio obbiettivo a breve termine, attualmente, è trasferirmi al
-              nord italia e lavorare in un contesto positivo dove si stia bene.
-              Dove ci sia la possibilità di lavorare con altre persone,
-              confrontarsi, crescere, migliorare ed essere formati.
+              Il mio obbiettivo a breve termine, è trasferirmi al nord italia e
+              lavorare in un contesto positivo dove si stia bene. Dove ci sia la
+              possibilità di lavorare con altre persone, confrontarsi, crescere,
+              migliorare ed essere formati. Dove si dà valore all'impegno e ci
+              sia una forma di meritocrazia! Un ambiente di lavoro, dove si
+              lavora con gli altri in armonia, sostenendo non solo i propri
+              valori ma anche quelli del progetto per cui si lavora.
             </div>
           </div>
         </div>
@@ -179,11 +184,12 @@ export default {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              Ormai la maggior parte di quello che faccio è inglese. Dai corsi
-              di apprendimento su Udemy, alla documentazione online, persino gli
-              hobby come videogames e film o la lettura e la musica. Ecco perché
-              il mio sito portfolio è sbadatamente metà italiano e metà in
-              inglese! A leggere e comprendere, me la cavo molto bene.
+              Ormai la maggior parte di quello che faccio da anni è in inglese.
+              Dai corsi di apprendimento e formazione su Udemy, alla
+              documentazione online, persino gli hobby come videogames e film o
+              la lettura e la musica. Ecco perché il mio sito portfolio è
+              sbadatamente metà italiano e metà in inglese! Sono fluente nella
+              lettura e nella compresione.
             </div>
           </div>
         </div>
@@ -235,17 +241,18 @@ export default {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              Sono cresciuto in un ambiente dove ho imparato a gestire lo
-              stress, soprattutto al lavoro e con le persone che mi circondano.
-              Fare programmazione a volte può essere senza dubbio frustrante e
-              stressante, ma credo anche che facciano la differenza il "dove" e
-              "con chi". Io affronto la programmazione esattamente come la vita.
-              La vita è fatta anche di pensieri, azioni, reazioni e problemi.
+              Sono cresciuto in un ambiente dove ho imparato a mie spese a
+              gestire lo stress, soprattutto al lavoro e con le persone che mi
+              circondano. Fare programmazione a volte può essere senza dubbio
+              frustrante e stressante, ma credo anche che facciano la differenza
+              il "dove" e "con chi". Io affronto la programmazione esattamente
+              come la vita. La vita è fatta anche di pensieri, azioni, reazioni
+              e problemi.
               <br />
               <em
-                >A volte nella vita dobbiamo soltanto fare un console.log(vita)
+                >A volte nella vita dobbiamo fare soltanto un console.log(life)
                 capire bene quali sono i problemi, dividerli in piccoli passi e
-                percorrene uno alla volta.
+                farne uno alla volta.
               </em>
             </div>
           </div>
@@ -269,11 +276,11 @@ export default {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              Il sito portfolio è stato fatto con Vue + Vite, col tempo farò
-              migliorie, ottimizzazioni e un pò di refactoring del codice! Le
-              grafiche e le immagini sono state fatte da me. Lo stesso vale per
-              Mokujin di Tekken (il burattino nella sezione Altro su di me) che
-              realizzai tempo fa su Blender!
+              Il sito portfolio è stato fatto con Vue.js + Vite e Bootstrap, col
+              tempo farò migliorie, ottimizzazioni e un pò di refactoring del
+              codice! Le grafiche e le immagini sono state realizzate da me. Lo
+              stesso vale per Mokujin di Tekken (il burattino nella sezione
+              Altro su di me) che realizzai tempo fa su Blender!
             </div>
           </div>
         </div>

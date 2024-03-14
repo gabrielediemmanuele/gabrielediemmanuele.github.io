@@ -16,21 +16,21 @@ export default {
           projectImage:
             "../../../public/images/Front-End-Advanced/cover-projects-front-advanced.png",
           projectTitle: "Front-End-Advaced",
-          projectDescription: "HTML, CSS, JS, Vue + Vite, API",
+          projectDescription: "HTML, CSS, Js, Vue + Vite, API",
           projectRoute: "frontEndAdvanced",
         },
         {
           projectImage:
             "../../../public/images/Front-End-Advanced/cover-projects-anidio.png",
           projectTitle: "Anidio",
-          projectDescription: "HTML, CSS, JS, VUE + VITE",
+          projectDescription: "HTML, CSS, Js, Vue + Vite",
           projectRoute: "anidio",
         },
         {
           projectImage:
             "../../../public/images/Deliveboo/cover-project-deliveboo.png",
           projectTitle: "DeliveBoo",
-          projectDescription: "Front-End - Back-End",
+          projectDescription: "Front-End (Vue), Back-End (Laravel)",
           projectRoute: "deliveboo",
         },
       ],
@@ -51,10 +51,7 @@ export default {
       <p class="text-center">
         Nota Bene: tutte le immagini, loghi, riferimenti, fonts, sono solo a
         scopo di studio e non commerciale! <br />
-        Altri lavori verrano caricati in futuro! <br />
-        Per navigare i progetti, cliccare sulla freccia che appare sulle card!
-        Per tornare indietro, al momento, cliccare su
-        <strong>portfolio</strong> in alto o in basso!
+        Altri lavori verrano caricati in futuro!
       </p>
       <div class="row">
         <div

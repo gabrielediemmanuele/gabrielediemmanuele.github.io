@@ -21,9 +21,9 @@ export default {
           L'obbiettivo del progetto è stato quello di realizzare un app simile a Deliveroo, con un lato Back-Office, dove il ristoratore\
           potesse registrarsi, creare il suo ristorante e ad esso, associare pietanze e ordinazioni. Lato Front-office invece l'utente può\
           ordinare le pietanze da un ristorante per volta, filtrando per tipologia, e una volta inseriti i prodotti nel carrello, procedere con il\
-          pagamento. Tra i vari obbiettivi tecnici, infine, l'organizzazione, il lavoro di squadra, il rispetto altrui ma soprattutto la condivisione\
-          l'inpegno e la testardaggine nonchè le capacità specifiche dei membri del team, hanno reso possibile la realizzazione di questo progetto. Imparare\
-          a lottare anche quando sembra impossibile e superare la frustrazione con l'impegno e la determinazione.",
+          pagamento. Oltre gli obbiettivi tecnici infine, l'organizzazione, il lavoro di squadra, il rispetto altrui ma soprattutto la condivisione\
+         e la testardaggine nonchè le capacità specifiche dei membri del team, hanno reso possibile la realizzazione di questo progetto. Imparare\
+          a lottare anche quando sembra impossibile e superare la frustrazione con impegno e determinazione.",
         functionsParagraph:
           "Per questo progetto, ho realizzato un video dove spiego in effetti come funziona l'applicazione ma riassumo anche testualmente\
           tutte le sue funzionalità. Il progetto è diviso in due grandi parti, un back-office e un front-office.\
@@ -36,7 +36,7 @@ export default {
           Lato Front-Office, l'utente può visualizzare, filtrare  e visitare i vari ristoranti. Di ogni ristorante, può visualizzare e ordinare i piatti\
           senza limiti di quantità, ma con la restrizione di ordinare da un solo ristorante per volta e procedere al pagamento o in caso di\
           ripensamenti, svuotare il carrello.\ All'interno del progetto sono anche stati presi provvedimenti: tutti i form sono protetti da validazione e restrizioni,\
-          in caso di errore, l'utente verrà avvisato. Altri ristoratori non possono visitare tramite la barra di ricerca altri ristoratori e ci sono dei blocchi di protezione\
+          in caso di errore, l'utente verrà avvisato. Utenti o 'esterni' non possono visitare tramite la barra di ricerca altri ristoratori e ci sono dei blocchi di protezione\
           affiché i dati che devono rimanere anonimi, lo siano. Infine, l'app, sia front che back è responsive e quindi, godibile da ogni dispositivo.",
         videoPath: "../../../../public/images/Deliveboo/deliveboo.mp4",
       },

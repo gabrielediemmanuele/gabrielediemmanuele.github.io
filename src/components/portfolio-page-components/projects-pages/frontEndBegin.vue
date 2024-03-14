@@ -26,7 +26,7 @@ export default {
         il capolinea prima del progetto 'finale' legato al Front-End che troverete nella sua apposita sezione.",
         functionsParagraph:
           "Si comincia dal prototipo di Zalando, ove il focus dell'esercizio è stato quello di creare un effetto hover legato ai prodotti, \
-        l'utilizzo del 'position' e ovviamente la struttura della pagina web base. A seguire, app come Discord, Zoom e Dropbox (non presente in video), per far pratica con Flex\
+        l'utilizzo del 'position' e ovviamente la struttura della pagina web base. A seguire, layout di Discord, Zoom e Dropbox (non presente in video), per far pratica con Flex\
         e creare layout complessi. In conclusione, un layout ispirato proprio a Boolean realizzato con Bootstrap e l'interfaccia di Spotify\
         svolta per scelta solo in HTML e CSS e l'utilizzo di media Query realizzate da 0 il cui focus era proprio creare app responsive con menù ed elementi a scomparsa.",
         videoPath:

@@ -14,21 +14,26 @@ export default {
 </script>
 
 <template>
-  <div class="card">
-    <img :src="cardImage" alt="" />
-    <div class="card-contents">
-      <div class="card-text">
-        <h3>{{ cardTitle }}</h3>
-        <span>{{ cardDescription }}</span>
+  <router-link :to="cardRoute" class="router-card">
+    <div class="card">
+      <img :src="cardImage" alt="" />
+      <div class="card-contents">
+        <div class="card-text">
+          <h3>{{ cardTitle }}</h3>
+          <span>{{ cardDescription }}</span>
+        </div>
+        <router-link :to="cardRoute" class="router-card"
+          ><button class="btn">></button></router-link
+        >
       </div>
-      <router-link :to="cardRoute" class="router-card"
-        ><button class="btn">></button></router-link
-      >
     </div>
-  </div>
+  </router-link>
 </template>
 
 <style lang="scss" scoped>
+.router-card {
+  text-decoration: none;
+}
 .card {
   margin: 30px 15px;
   padding: 10px;
