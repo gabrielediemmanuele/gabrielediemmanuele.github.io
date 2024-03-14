@@ -96,6 +96,11 @@ export default {
 }
 
 @media screen and (max-width: 510px) {
+  .text-cont {
+    h1 {
+      font-size: 60px !important;
+    }
+  }
   .image-cont {
     img {
       width: 300px;
