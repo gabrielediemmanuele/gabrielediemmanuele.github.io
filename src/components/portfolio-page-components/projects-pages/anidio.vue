@@ -11,7 +11,7 @@ export default {
         description:
           "Anidio è stato il mio progetto finale della sezione 'Front-end' che racchiude tutto quello che ho appreso,\
           da HTML CSS a Java Script, Vue(+ Vite) e il layout structure & responsive.",
-        introImagePath: "../../../../public/images/anidio-rocket.png",
+        introImagePath: "/images/anidio-rocket.png",
       },
       project: {
         objParagraph:
@@ -27,11 +27,11 @@ export default {
           per la generazioni di elementi ripetuti, come i loghi e le cards. Tutto il layout è stato fatto con l'estremo utilizzo del nostro\
           adorato display: flex. Tra le funzioni più interessanti, c'è lo slider che riguarda i membri del team, un estensione per riportare alla cima della pagina e un piccolo\
           form per inviare la mail.",
-        videoPath: "../../../../public/images/anidio.mp4",
+        videoPath: "/images/anidio.mp4",
       },
       cards: [
         {
-          cardImage: "../../../../public/images/Anidio.png",
+          cardImage: "/images/Anidio.png",
           cardTitle: "Anidio Complete Layout",
           cardDescription: "Vue + Vite, JS",
         },

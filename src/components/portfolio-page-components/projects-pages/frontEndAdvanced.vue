@@ -11,8 +11,7 @@ export default {
         description:
           "In questa sezione, sono presenti progetti Front-end che alzano l'asticella di difficoltà\
           includendo JavaScript, Vue e Vite.",
-        introImagePath:
-          "../../../../dist/images/Front-End-Advanced/vue-vite-works-collection.png",
+        introImagePath: "/images/vue-vite-works-collection.png",
       },
       project: {
         objParagraph:
@@ -31,31 +30,31 @@ export default {
           Per concludere, con gli stessi principi, una riproduzione di Netflix (Boolflix), dove tramite chiamata API riceviamo sia Serie TV che Film, questi, dopo la ricerca, appaiono e\
           vengono separati in layout tra Tv Series e Movies. Ogni film, in hover sulla sua copertina, presenta anche una descrizione, una lingua che è contrassegnata da una bandiera assegnata dinamicamente e un punteggio in stelle\
           anche questo basato su una logica JavaScript.",
-        videoPath: "../../../../public/images/vue-vite.mp4",
+        videoPath: "/images/vue-vite.mp4",
       },
       cards: [
         {
-          cardImage: "../../../../public/images/playstation-slider.png",
+          cardImage: "/images/playstation-slider.png",
           cardTitle: "Playstation Slider",
           cardDescription: "Vue, JS",
         },
         {
-          cardImage: "../../../../public/images/boolzap.png",
+          cardImage: "/images/boolzap.png",
           cardTitle: "Boolzap",
           cardDescription: "Vue, JS",
         },
         {
-          cardImage: "../../../../public/images/dc-comics.png",
+          cardImage: "/images/dc-comics.png",
           cardTitle: "Dropbox",
           cardDescription: "Vue, Vite, API",
         },
         {
-          cardImage: "../../../../public/images/yu-gi-oh-api.png",
+          cardImage: "/images/yu-gi-oh-api.png",
           cardTitle: "Yu-gi-Oh! API",
           cardDescription: "Vue, Vite, API",
         },
         {
-          cardImage: "../../../../public/images/boolflix.png",
+          cardImage: "/images/boolflix.png",
           cardTitle: "Boolflix",
           cardDescription: "Vue, Vite, API",
         },

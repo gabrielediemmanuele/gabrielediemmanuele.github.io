@@ -12,7 +12,7 @@ export default {
         description:
           "Nel mio portfolio troverete lavori e casi di studio sia Front-End che Back-End oltre che progetti personali \
           e lavori di Graphic Design alcuni dei quali sono entrati in commercio. Buona visione.",
-        introImagePath: "../../../public/images/portoflio-cover-image.png",
+        introImagePath: "/images/portoflio-cover-image.png",
       },
     };
   },

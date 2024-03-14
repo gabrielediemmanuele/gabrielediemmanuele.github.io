@@ -20,67 +20,67 @@ export default {
       ],
       technologiesImages: [
         {
-          imagePath: "../../../public/images/adobePhotoshop.png",
+          imagePath: "/images/adobePhotoshop.png",
           imageAlt: "Logo Adobe Photoshop",
         },
         {
-          imagePath: "../../../public/images/adobeIllustrator.png",
+          imagePath: "/images/adobeIllustrator.png",
           imageAlt: "Logo Adobe Illustrator",
         },
         {
-          imagePath: "../../../public/images/adobeXd.png",
+          imagePath: "/images/adobeXd.png",
           imageAlt: "Logo Adobe XD",
         },
         {
-          imagePath: "../../../public/images/inDesign.png",
+          imagePath: "/images/inDesign.png",
           imageAlt: "Logo Adobe inDesign",
         },
         {
-          imagePath: "../../../public/images/html5.png",
+          imagePath: "/images/html5.png",
           imageAlt: "html5 logo",
         },
         {
-          imagePath: "../../../public/images/css.png",
+          imagePath: "/images/css.png",
           imageAlt: "css logo",
         },
         {
-          imagePath: "../../../public/images/JavaScript-logo.png",
+          imagePath: "/images/JavaScript-logo.png",
           imageAlt: "java script logo",
         },
         {
-          imagePath: "../../../public/images/bootstrap.png",
+          imagePath: "/images/bootstrap.png",
           imageAlt: "bootstrap logo",
         },
         {
-          imagePath: "../../../public/images/git.png",
+          imagePath: "/images/git.png",
           imageAlt: "logo git",
         },
         {
-          imagePath: "../../../public/images/node.png",
+          imagePath: "/images/node.png",
           imageAlt: "node js git",
         },
         {
-          imagePath: "../../../public/images/vuejs.png",
+          imagePath: "/images/vuejs.png",
           imageAlt: "logo vue js",
         },
         {
-          imagePath: "../../../public/images/vite.png",
+          imagePath: "/images/vite.png",
           imageAlt: "logo vite (vue)",
         },
         {
-          imagePath: "../../../public/images/sass.png",
+          imagePath: "/images/sass.png",
           imageAlt: "logo sass",
         },
         {
-          imagePath: "../../../public/images/mysql.png",
+          imagePath: "/images/mysql.png",
           imageAlt: "logo my sql",
         },
         {
-          imagePath: "../../../public/images/PHP-logo.svg.png",
+          imagePath: "/images/PHP-logo.svg.png",
           imageAlt: "logo php",
         },
         {
-          imagePath: "../../../public/images/laravel.png",
+          imagePath: "/images/laravel.png",
           imageAlt: "logo laravel",
         },
       ],

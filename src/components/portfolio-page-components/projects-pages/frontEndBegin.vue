@@ -12,8 +12,7 @@ export default {
           "Tengo a mostrare i primi progetti realizzati in Boolean, per dare l'idea \
           dei miglioramenti avuti nel tempo (e sicuramente c'è ancora tanto da imparare) \
           ma vedere l'inizio del cammino, mostra anche quanta strada ho fatto!",
-        introImagePath:
-          "../../../../dist/images/Front-End-Begin/portfolio-front-end-mix.png",
+        introImagePath: "/images/portfolio-front-end-mix.png",
       },
       project: {
         objParagraph:
@@ -29,31 +28,31 @@ export default {
         l'utilizzo del 'position' e ovviamente la struttura della pagina web base. A seguire, layout di Discord, Zoom e Dropbox (non presente in video), per far pratica con Flex\
         e creare layout complessi. In conclusione, un layout ispirato proprio a Boolean realizzato con Bootstrap e l'interfaccia di Spotify\
         svolta per scelta solo in HTML e CSS e l'utilizzo di media Query realizzate da 0 il cui focus era proprio creare app responsive con menù ed elementi a scomparsa.",
-        videoPath: "../../../../public/images/start-front-end.mp4",
+        videoPath: "/images/start-front-end.mp4",
       },
       cards: [
         {
-          cardImage: "../../../../public/images/zalando.png",
+          cardImage: "/images/zalando.png",
           cardTitle: "Zalando",
           cardDescription: "HTML, CSS, :hover, position",
         },
         {
-          cardImage: "../../../../public/images/discord.png",
+          cardImage: "/images/discord.png",
           cardTitle: "Discord",
           cardDescription: "HTML, CSS, Flex",
         },
         {
-          cardImage: "../../../../public/images/dropbox.png",
+          cardImage: "/images/dropbox.png",
           cardTitle: "Dropbox",
           cardDescription: "HTML, CSS, Flex",
         },
         {
-          cardImage: "../../../../public/images/spotify.png",
+          cardImage: "/images/spotify.png",
           cardTitle: "Spotify",
           cardDescription: "HTML, CSS, responsive",
         },
         {
-          cardImage: "../../../../public/images/layout-bootstrap.png",
+          cardImage: "/images/layout-bootstrap.png",
           cardTitle: "bla",
           cardDescription: "HTML, CSS, Bootstrap",
         },
