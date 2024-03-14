@@ -26,7 +26,7 @@ export default {
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
-              class="accordion-button"
+              class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
@@ -170,7 +170,7 @@ export default {
               aria-expanded="false"
               aria-controls="collapseFive"
             >
-              Come te la cavi con l'inglese ?
+              Parli la lingua inglese ?
             </button>
           </h2>
           <div
@@ -193,42 +193,15 @@ export default {
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseFive"
+              data-bs-target="#collapseSix"
               aria-expanded="false"
-              aria-controls="collapseFive"
-            >
-              Come te la cavi con l'inglese ?
-            </button>
-          </h2>
-          <div
-            id="collapseFive"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              Ormai la maggior parte di quello che faccio è inglese. Dai corsi
-              di apprendimento su Udemy, alla documentazione online, persino gli
-              hobby come videogames e film o la lettura e la musica. Ecco perché
-              il mio sito portfolio è sbadatamente metà italiano e metà in
-              inglese! A leggere e comprendere, me la cavo molto bene.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFive"
-              aria-expanded="false"
-              aria-controls="collapseFive"
+              aria-controls="collapseSix"
             >
               Che tipo di persona sono?
             </button>
           </h2>
           <div
-            id="collapseFive"
+            id="collapseSix"
             class="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
@@ -240,6 +213,67 @@ export default {
               tempo, ma con educazione e riguardo. Mi piace essere positivo,
               questo mi permette di affrontare situazioni di stress con maggior
               riflessione e tolleranza.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              La mia filosofia sullo "stress" e la programmazione
+            </button>
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Sono cresciuto in un ambiente dove ho imparato a gestire lo
+              stress, soprattutto al lavoro e con le persone che mi circondano.
+              Fare programmazione a volte può essere senza dubbio frustrante e
+              stressante, ma credo anche che facciano la differenza il "dove" e
+              "con chi". Io affronto la programmazione esattamente come la vita.
+              La vita è fatta anche di pensieri, azioni, reazioni e problemi.
+              <br />
+              <em
+                >A volte nella vita dobbiamo soltanto fare un console.log(vita)
+                capire bene quali sono i problemi, dividerli in piccoli passi e
+                percorrene uno alla volta.
+              </em>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              Come ho costruito questo sito?
+            </button>
+          </h2>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Il sito portfolio è stato fatto con Vue + Vite, col tempo farò
+              migliorie, ottimizzazioni e un pò di refactoring del codice! Le
+              grafiche e le immagini sono state fatte da me. Lo stesso vale per
+              Mokujin di Tekken (il burattino nella sezione Altro su di me) che
+              realizzai tempo fa su Blender!
             </div>
           </div>
         </div>
