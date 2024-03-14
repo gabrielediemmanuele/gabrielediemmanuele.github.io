@@ -18,7 +18,7 @@ export default {
            nel Graphic Design in autonomia e infine, ho unito entrambi i mondi sul codice, \
            specializzandomi come !Jr Full-Stack Web-Developer presso Boolean con una predisposizione per il Front-End.\
            Oltre il codig, mi piace fare tanto altro! Scoprilo qui sotto!",
-        introImagePath: "../../../public/images/aboutpage.png",
+        introImagePath: "/images/aboutpage.png",
       },
     };
   },
