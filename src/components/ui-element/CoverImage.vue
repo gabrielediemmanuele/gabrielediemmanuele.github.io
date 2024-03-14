@@ -210,7 +210,7 @@ export default {
   color: rgb(255, 162, 0);
   032336
   #white
-  #ffa200 
+  #ffa200
 */
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -230,69 +230,45 @@ export default {
   .design-content-right img {
     width: 70%;
   }
+  .dev-content-left {
+    position: absolute;
+    left: 25px;
+  }
+  .design-content-right {
+    position: absolute;
+    right: 25px;
+  }
   .dev-content-right {
     position: absolute;
     top: 5%;
-    right: 0px;
-    margin-left: 10%;
+    right: 15px;
     width: 300px;
   }
 }
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  .dev-content-left p,
-  .dev-content-right p,
-  .design-content-right p,
-  .design-content-left p {
-    display: none;
-  }
-
-  .dev-content-right h2 {
-    font-size: 50px;
-    position: absolute;
-    right: -15%;
+@media screen and (max-width: 768px) {
+  .dev-content-right {
     rotate: 90deg;
+    top: 30% !important;
+    right: -100px;
+    p {
+      display: none;
+    }
   }
-  .design-content-left h2 {
-    font-size: 50px;
+  .design-content-left {
     rotate: 270deg;
-    position: absolute;
-    left: -50px;
+    top: 30% !important;
+    left: -100px;
+    p {
+      display: none;
+    }
   }
-  .dev-content-left img,
-  .design-content-right img {
-    width: 50%;
-  }
-  .dev-content-left img {
-    position: absolute;
-    left: 10%;
-    top: 100px;
-  }
-  .design-content-right img {
-    position: absolute;
-    right: 10%;
-    top: 100px;
+  .dev-content-left,
+  .design-content-right {
+    display: none;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .dev-content-right h2 {
-    font-size: 30px;
-    position: absolute;
-    right: -15%;
-    rotate: 90deg;
-  }
-  .design-content-left h2 {
-    font-size: 30px;
-    rotate: 270deg;
-    position: absolute;
-    left: -50px;
-  }
-  .dev-content-left,
-  .dev-content-right p,
-  .design-content-right,
-  .design-content-left p {
-    display: none;
-  }
 }
 </style>

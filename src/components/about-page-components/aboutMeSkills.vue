@@ -183,11 +183,12 @@ export default {
     justify-content: center;
     margin-bottom: 20px;
     .col-1 {
-      margin: 10px;
+      width: 65px;
+      height: 65px;
 
       img {
-        height: 50px;
-        width: 50px;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
       }
     }

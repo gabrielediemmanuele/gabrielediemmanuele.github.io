@@ -62,7 +62,7 @@ export default {
               </button>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 image-cont">
+          <div class="col-sm-12 col-md-6 circle-cont">
             <img
               class="circular-image"
               src="../../../public/images/contacts-profile.png"
@@ -76,6 +76,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.circle-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contacts-container {
   font-family: "Rubik", sans-serif;
   color: rgb(3, 35, 54);
@@ -119,6 +124,7 @@ export default {
             border-radius: 20px;
             padding: 10px 15px;
             border: none;
+            margin-bottom: 10px;
             background-color: rgb(3, 35, 54);
             &:hover {
               background-color: orange;
@@ -142,7 +148,7 @@ export default {
           width: 80%;
           box-shadow: 0px 0px 6px 2px rgba(166, 166, 166, 0.5);
           border-radius: 50%;
-          margin: 10px 0 10px 0;
+          margin-top: 25px;
           object-fit: cover;
         }
       }
