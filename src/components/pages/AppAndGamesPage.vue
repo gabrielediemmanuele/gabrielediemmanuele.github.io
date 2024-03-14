@@ -4,7 +4,7 @@
 export default {
   data() {
     return {
-      title: "Ciao",
+      title: "Work in progress..!",
     };
   },
 
