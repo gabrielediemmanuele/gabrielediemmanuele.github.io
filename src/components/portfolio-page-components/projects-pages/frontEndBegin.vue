@@ -53,7 +53,7 @@ export default {
         },
         {
           cardImage: "/images/layout-bootstrap.png",
-          cardTitle: "bla",
+          cardTitle: "Boolean + Bootstrap",
           cardDescription: "HTML, CSS, Bootstrap",
         },
       ],

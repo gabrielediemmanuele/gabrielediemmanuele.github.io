@@ -179,7 +179,7 @@ export default {
   margin-bottom: 30px;
 }
 .carousel-cont {
-  width: 60%;
+  width: 70%;
   margin-bottom: 50px;
   box-shadow: 0px 0px 6px 1px rgb(0, 0, 0, 0.5);
   border-radius: 30px;
@@ -187,6 +187,7 @@ export default {
 .carousel-inner {
   border-radius: 30px;
   .carousel-item {
+    height: 500px; // Imposta un'altezza fissa per tutti gli elementi del carosello
     border-radius: 30px;
     img {
       width: 100% !important;
