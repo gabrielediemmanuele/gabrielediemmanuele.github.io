@@ -51,7 +51,10 @@ export default {
       <p class="text-center">
         Nota Bene: tutte le immagini, loghi, riferimenti, fonts, sono solo a
         scopo di studio e non commerciale! <br />
-        Altri lavori verrano caricati in futuro!
+        Altri lavori verrano caricati in futuro! <br />
+        Per navigare i progetti, cliccare sulla freccia che appare sulle card!
+        Per tornare indietro, al momento, cliccare su
+        <strong>portfolio</strong> in alto o in basso!
       </p>
       <div class="row">
         <div
