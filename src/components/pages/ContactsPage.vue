@@ -34,8 +34,18 @@ export default {
               <a href=""><font-awesome-icon icon="fa-solid fa-envelope" /></a>
             </div>
             <div class="download-cont">
-              <a href="" download="">Scarica il mio CV</a>
-              <a href="" download="">Scarica il mio Portfolio</a>
+              <button>
+                <a href="" download=""
+                  >Scarica il mio CV
+                  <font-awesome-icon icon="fa-solid fa-download"
+                /></a>
+              </button>
+              <button>
+                <a href="" download=""
+                  >Scarica il mio Portfolio
+                  <font-awesome-icon icon="fa-solid fa-download"
+                /></a>
+              </button>
             </div>
           </div>
           <div class="col-sm-12 col-md-6 image-cont">
@@ -72,16 +82,44 @@ export default {
           margin: 20px 0 20px 0;
           font-style: italic;
         }
+        /* icons */
+        .icons-cont {
+          margin-bottom: 20px;
+          .fa-linkedin,
+          .fa-github,
+          .fa-envelope {
+            font-size: 45px;
+            color: rgb(3, 35, 54);
+            &:hover {
+              color: orange;
+              cursor: pointer;
+            }
+          }
+          .fa-github {
+            margin: 0 20px;
+          }
+        }
+        .circular-image {
+          width: 80%;
+          box-shadow: 0px 0px 6px 2px rgba(166, 166, 166, 0.5);
+          border-radius: 50%;
+          margin: 10px 0 10px 0;
+          object-fit: cover;
+        }
       }
     }
   }
 }
 
-.circular-image {
-  width: 80%;
-  box-shadow: 0px 0px 6px 2px rgba(166, 166, 166, 0.5);
-  border-radius: 50%;
-  margin: 10px 0 10px 0;
-  object-fit: cover;
+@media screen and (max-width: 567px) {
+  .container-fluid {
+    .row {
+      .col-sm-12 {
+        h1 {
+          font-size: 60px !important;
+        }
+      }
+    }
+  }
 }
 </style>
