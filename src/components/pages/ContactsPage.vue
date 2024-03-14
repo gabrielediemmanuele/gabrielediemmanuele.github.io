@@ -9,7 +9,7 @@ export default {
         subtitle: "👨🏻‍💻👨🏻‍🎨",
         description:
           "Contattami pure tramite e-mail e Linkedin o scarica il mio CV per maggiori informazioni!",
-        introImagePath: "../../../public/images/contacts-profile.png",
+        introImagePath: "/assets/contacts-profile.png",
       },
     };
   },
@@ -65,7 +65,7 @@ export default {
           <div class="col-sm-12 col-md-6 circle-cont">
             <img
               class="circular-image"
-              src="../../../public/images/contacts-profile.png"
+              src="../../../dist/assets/contacts-profile-BYmDABDf.png"
               alt=""
             />
           </div>
