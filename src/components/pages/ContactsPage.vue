@@ -29,13 +29,21 @@ export default {
             <h1>{{ contacts.title }}</h1>
             <h3>{{ contacts.description }} {{ contacts.subtitle }}</h3>
             <div class="icons-cont">
-              <a href=""><font-awesome-icon icon="fa-brands fa-linkedin" /></a>
-              <a href=""><font-awesome-icon icon="fa-brands fa-github" /></a>
-              <a href=""><font-awesome-icon icon="fa-solid fa-envelope" /></a>
+              <a href="https://www.linkedin.com/in/gabriele-di-emmanuele/"
+                ><font-awesome-icon icon="fa-brands fa-linkedin"
+              /></a>
+              <a href="https://github.com/gabrielediemmanuele"
+                ><font-awesome-icon icon="fa-brands fa-github"
+              /></a>
+              <a href="mailto:gabriele.diemmanuele@outlook.it"
+                ><font-awesome-icon icon="fa-solid fa-envelope"
+              /></a>
             </div>
             <div class="download-cont">
               <button class="button btn-left">
-                <a href="" download=""
+                <a
+                  href="../../../public/images/cv-2024-gabriele-di-emmanuele.pdf"
+                  download="cv-2024-gabriele-di-emmanuele"
                   >Scarica il mio CV
                   <font-awesome-icon
                     class="fa-solid"
@@ -43,7 +51,9 @@ export default {
                 /></a>
               </button>
               <button class="button btn-right">
-                <a href="" download=""
+                <a
+                  href="../../../public/images/graphic-design-portfolio-2024-gabriele-di-emmanuele.pdf"
+                  download="portfolio-2024-gabriele-di-emmanuele"
                   >Graphic Design Portfolio
                   <font-awesome-icon
                     class="fa-solid"
