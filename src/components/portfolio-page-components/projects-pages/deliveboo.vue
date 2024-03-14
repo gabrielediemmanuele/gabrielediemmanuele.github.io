@@ -38,56 +38,56 @@ export default {
           ripensamenti, svuotare il carrello.\ All'interno del progetto sono anche stati presi provvedimenti: tutti i form sono protetti da validazione e restrizioni,\
           in caso di errore, l'utente verrà avvisato. Utenti o 'esterni' non possono visitare tramite la barra di ricerca altri ristoratori e ci sono dei blocchi di protezione\
           affiché i dati che devono rimanere anonimi, lo siano. Infine, l'app, sia front che back è responsive e quindi, godibile da ogni dispositivo.",
-        videoPath: "../../../../dist/images/Deliveboo/deliveboo.mp4",
+        videoPath: "../../../../public/images/deliveboo.mp4",
       },
       cards: [
         {
-          cardImage: "../../../../dist/images/Deliveboo/deliveboo1.png",
+          cardImage: "../../../../public/images/deliveboo1.png",
           cardTitle: "Deliveboo Home Front-Office",
           cardDescription: "Vue + Vite, Laravel, MySql",
         },
         {
-          cardImage: "../../../../dist/images/Deliveboo/deliveboo2.png",
+          cardImage: "../../../../public/images/deliveboo2.png",
           cardTitle: "Deliveboo PayForm",
           cardDescription: "Vue + Vite, Laravel, MySql",
         },
         {
-          cardImage: "../../../../dist/images/Deliveboo/deliveboo3.png",
+          cardImage: "../../../../public/images/deliveboo3.png",
           cardTitle: "Deliveboo PayForm",
           cardDescription: "Vue + Vite, Laravel, MySql",
         },
         {
-          cardImage: "../../../../dist/images/Deliveboo/deliveboo4.png",
+          cardImage: "../../../../public/images/deliveboo4.png",
           cardTitle: "Deliveboo Restaurant",
           cardDescription: "Vue + Vite, Laravel, MySql",
         },
         {
-          cardImage: "../../../../dist/images/Deliveboo/deliveboo5.png",
+          cardImage: "../../../../public/images/deliveboo5.png",
           cardTitle: "Deliveboo Empty Cart",
           cardDescription: "Vue + Vite, Laravel, MySql",
         },
         {
-          cardImage: "../../../../dist/images/Deliveboo/deliveboo6.png",
+          cardImage: "../../../../public/images/deliveboo6.png",
           cardTitle: "Deliveboo Cart",
           cardDescription: "Vue + Vite, Laravel, MySql",
         },
         {
-          cardImage: "../../../../dist/images/Deliveboo/deliveboo7.png",
+          cardImage: "../../../../public/images/deliveboo7.png",
           cardTitle: "Deliveboo Order",
           cardDescription: "Vue + Vite, Laravel, MySql",
         },
         {
-          cardImage: "../../../../dist/images/Deliveboo/deliveboo8.png",
+          cardImage: "../../../../public/images/deliveboo8.png",
           cardTitle: "Deliveboo Home Back-Office",
           cardDescription: "Vue + Vite, Laravel, MySql",
         },
         {
-          cardImage: "../../../../dist/images/Deliveboo/deliveboo9.png",
+          cardImage: "../../../../public/images/deliveboo9.png",
           cardTitle: "Deliveboo Log-in",
           cardDescription: "Vue + Vite, Laravel, MySql",
         },
         {
-          cardImage: "../../../../dist/images/Deliveboo/deliveboo10.png",
+          cardImage: "../../../../public/images/deliveboo10.png",
           cardTitle: "Deliveboo Restaurant Back-office",
           cardDescription: "Vue + Vite, Laravel, MySql",
         },

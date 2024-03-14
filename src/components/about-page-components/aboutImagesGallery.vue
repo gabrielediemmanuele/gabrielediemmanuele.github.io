@@ -4,22 +4,22 @@ export default {
     return {
       aboutCardImages: [
         {
-          imagePath: "../../../dist/assets/marmore.jpg",
+          imagePath: "../../../public/images/marmore.jpg",
         },
         {
-          imagePath: "../../../dist/assets/meandlove.jpg",
+          imagePath: "../../../public/images/meandlove.jpg",
         },
         {
-          imagePath: "../../../dist/assets/tumpi.jpg",
+          imagePath: "../../../public/images/tumpi.jpg",
         },
         {
-          imagePath: "../../../dist/assets/ghost-rider-paint.jpg",
+          imagePath: "../../../public/images/ghost-rider-paint.jpg",
         },
         {
-          imagePath: "../../../dist/assets/cooking.jpg",
+          imagePath: "../../../public/images/cooking.jpg",
         },
         {
-          imagePath: "../../../dist/assets/working.jpg",
+          imagePath: "../../../public/images/working.jpg",
         },
       ],
     };

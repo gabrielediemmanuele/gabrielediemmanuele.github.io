@@ -29,33 +29,31 @@ export default {
         l'utilizzo del 'position' e ovviamente la struttura della pagina web base. A seguire, layout di Discord, Zoom e Dropbox (non presente in video), per far pratica con Flex\
         e creare layout complessi. In conclusione, un layout ispirato proprio a Boolean realizzato con Bootstrap e l'interfaccia di Spotify\
         svolta per scelta solo in HTML e CSS e l'utilizzo di media Query realizzate da 0 il cui focus era proprio creare app responsive con menù ed elementi a scomparsa.",
-        videoPath:
-          "../../../../dist/images/Front-End-Begin/start-front-end.mp4",
+        videoPath: "../../../../public/images/start-front-end.mp4",
       },
       cards: [
         {
-          cardImage: "../../../../dist/images/Front-End-Begin/zalando.png",
+          cardImage: "../../../../public/images/zalando.png",
           cardTitle: "Zalando",
           cardDescription: "HTML, CSS, :hover, position",
         },
         {
-          cardImage: "../../../../dist/images/Front-End-Begin/discord.png",
+          cardImage: "../../../../public/images/discord.png",
           cardTitle: "Discord",
           cardDescription: "HTML, CSS, Flex",
         },
         {
-          cardImage: "../../../../dist/images/Front-End-Begin/dropbox.png",
+          cardImage: "../../../../public/images/dropbox.png",
           cardTitle: "Dropbox",
           cardDescription: "HTML, CSS, Flex",
         },
         {
-          cardImage: "../../../../dist/images/Front-End-Begin/spotify.png",
+          cardImage: "../../../../public/images/spotify.png",
           cardTitle: "Spotify",
           cardDescription: "HTML, CSS, responsive",
         },
         {
-          cardImage:
-            "../../../../dist/images/Front-End-Begin/layout-bootstrap.png",
+          cardImage: "../../../../public/images/layout-bootstrap.png",
           cardTitle: "bla",
           cardDescription: "HTML, CSS, Bootstrap",
         },

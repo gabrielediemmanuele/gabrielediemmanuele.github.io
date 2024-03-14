@@ -31,33 +31,31 @@ export default {
           Per concludere, con gli stessi principi, una riproduzione di Netflix (Boolflix), dove tramite chiamata API riceviamo sia Serie TV che Film, questi, dopo la ricerca, appaiono e\
           vengono separati in layout tra Tv Series e Movies. Ogni film, in hover sulla sua copertina, presenta anche una descrizione, una lingua che è contrassegnata da una bandiera assegnata dinamicamente e un punteggio in stelle\
           anche questo basato su una logica JavaScript.",
-        videoPath: "../../../../dist/images/Front-End-Advanced/vue-vite.mp4",
+        videoPath: "../../../../public/images/vue-vite.mp4",
       },
       cards: [
         {
-          cardImage:
-            "../../../../dist/images/Front-End-Advanced/playstation-slider.png",
+          cardImage: "../../../../public/images/playstation-slider.png",
           cardTitle: "Playstation Slider",
           cardDescription: "Vue, JS",
         },
         {
-          cardImage: "../../../../dist/images/Front-End-Advanced/boolzap.png",
+          cardImage: "../../../../public/images/boolzap.png",
           cardTitle: "Boolzap",
           cardDescription: "Vue, JS",
         },
         {
-          cardImage: "../../../../dist/images/Front-End-Advanced/dc-comics.png",
+          cardImage: "../../../../public/images/dc-comics.png",
           cardTitle: "Dropbox",
           cardDescription: "Vue, Vite, API",
         },
         {
-          cardImage:
-            "../../../../dist/images/Front-End-Advanced/yu-gi-oh-api.png",
+          cardImage: "../../../../public/images/yu-gi-oh-api.png",
           cardTitle: "Yu-gi-Oh! API",
           cardDescription: "Vue, Vite, API",
         },
         {
-          cardImage: "../../../../dist/images/Front-End-Advanced/boolflix.png",
+          cardImage: "../../../../public/images/boolflix.png",
           cardTitle: "Boolflix",
           cardDescription: "Vue, Vite, API",
         },

@@ -109,77 +109,77 @@ export default {
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="../../../public/images/graphic-design/3d.jpg"
+              src="../../../public/images/3d.jpg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../../../public/images/graphic-design/chainbrush.jpg"
+              src="../../../public/images/chainbrush.jpg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../../../public/images/graphic-design/double-exposure.jpg"
+              src="../../../public/images/double-exposure.jpg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../../../public/images/graphic-design/deep-forest-book.jpg"
+              src="../../../public/images/deep-forest-book.jpg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../../../public/images/graphic-design/bonny-herbs.png"
+              src="../../../public/images/bonny-herbs.png"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../../../public/images/graphic-design/flux-sketch.jpg"
+              src="../../../public/images/flux-sketch.jpg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../../../public/images/graphic-design/flux-wallpaper.jpg"
+              src="../../../public/images/flux-wallpaper.jpg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../../../public/images/graphic-design/flux-mokups.jpg"
+              src="../../../public/images/flux-mokups.jpg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../../../public/images/graphic-design/postcard.jpg"
+              src="../../../public/images/postcard.jpg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../../../public/images/graphic-design/supersmoothies1.jpg"
+              src="../../../public/images/supersmoothies1.jpg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../../../public/images/graphic-design/supersmoothies2.jpg"
+              src="../../../public/images/supersmoothies2.jpg"
               class="d-block"
               alt="..."
             />

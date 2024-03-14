@@ -20,67 +20,67 @@ export default {
       ],
       technologiesImages: [
         {
-          imagePath: "../../../dist/images/technologies/adobePhotoshop.png",
+          imagePath: "../../../public/images/adobePhotoshop.png",
           imageAlt: "Logo Adobe Photoshop",
         },
         {
-          imagePath: "../../../dist/images/technologies/adobeIllustrator.png",
+          imagePath: "../../../public/images/adobeIllustrator.png",
           imageAlt: "Logo Adobe Illustrator",
         },
         {
-          imagePath: "../../../dist/images/technologies/adobeXd.png",
+          imagePath: "../../../public/images/adobeXd.png",
           imageAlt: "Logo Adobe XD",
         },
         {
-          imagePath: "../../../dist/images/technologies/inDesign.png",
+          imagePath: "../../../public/images/inDesign.png",
           imageAlt: "Logo Adobe inDesign",
         },
         {
-          imagePath: "../../../dist/images/technologies/html5.png",
+          imagePath: "../../../public/images/html5.png",
           imageAlt: "html5 logo",
         },
         {
-          imagePath: "../../../dist/images/technologies/css.png",
+          imagePath: "../../../public/images/css.png",
           imageAlt: "css logo",
         },
         {
-          imagePath: "../../../dist/images/technologies/JavaScript-logo.png",
+          imagePath: "../../../public/images/JavaScript-logo.png",
           imageAlt: "java script logo",
         },
         {
-          imagePath: "../../../dist/images/technologies/bootstrap.png",
+          imagePath: "../../../public/images/bootstrap.png",
           imageAlt: "bootstrap logo",
         },
         {
-          imagePath: "../../../dist/images/technologies/git.png",
+          imagePath: "../../../public/images/git.png",
           imageAlt: "logo git",
         },
         {
-          imagePath: "../../../dist/images/technologies/node.png",
+          imagePath: "../../../public/images/node.png",
           imageAlt: "node js git",
         },
         {
-          imagePath: "../../../dist/images/technologies/vuejs.png",
+          imagePath: "../../../public/images/vuejs.png",
           imageAlt: "logo vue js",
         },
         {
-          imagePath: "../../../dist/images/technologies/vite.png",
+          imagePath: "../../../public/images/vite.png",
           imageAlt: "logo vite (vue)",
         },
         {
-          imagePath: "../../../dist/images/technologies/sass.png",
+          imagePath: "../../../public/images/sass.png",
           imageAlt: "logo sass",
         },
         {
-          imagePath: "../../../dist/images/technologies/mysql.png",
+          imagePath: "../../../public/images/mysql.png",
           imageAlt: "logo my sql",
         },
         {
-          imagePath: "../../../dist/images/technologies/PHP-logo.svg.png",
+          imagePath: "../../../public/images/PHP-logo.svg.png",
           imageAlt: "logo php",
         },
         {
-          imagePath: "../../../dist/images/technologies/laravel.png",
+          imagePath: "../../../public/images/laravel.png",
           imageAlt: "logo laravel",
         },
       ],
