@@ -34,16 +34,20 @@ export default {
               <a href=""><font-awesome-icon icon="fa-solid fa-envelope" /></a>
             </div>
             <div class="download-cont">
-              <button>
+              <button class="button btn-left">
                 <a href="" download=""
                   >Scarica il mio CV
-                  <font-awesome-icon icon="fa-solid fa-download"
+                  <font-awesome-icon
+                    class="fa-solid"
+                    icon="fa-solid fa-download"
                 /></a>
               </button>
-              <button>
+              <button class="button btn-right">
                 <a href="" download=""
-                  >Scarica il mio Portfolio
-                  <font-awesome-icon icon="fa-solid fa-download"
+                  >Graphic Design Portfolio
+                  <font-awesome-icon
+                    class="fa-solid"
+                    icon="fa-solid fa-download"
                 /></a>
               </button>
             </div>
@@ -97,6 +101,31 @@ export default {
           }
           .fa-github {
             margin: 0 20px;
+          }
+        }
+
+        .download-cont {
+          .button {
+            border-radius: 20px;
+            padding: 10px 15px;
+            border: none;
+            background-color: rgb(3, 35, 54);
+            &:hover {
+              background-color: orange;
+              a {
+                color: rgb(3, 35, 54);
+              }
+            }
+            a {
+              color: white;
+              text-decoration: none;
+              .fa-solid {
+                margin-left: 2px;
+              }
+            }
+          }
+          .btn-left {
+            margin-right: 20px;
           }
         }
         .circular-image {
