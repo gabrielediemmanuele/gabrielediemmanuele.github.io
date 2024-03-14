@@ -10,7 +10,7 @@ export default {
         "Preferisco ambienti naturali ⛺",
         "Pratico Yoga e Mindfulness 🧘🏻‍♂️",
         "pizza, Pizza, PIZZA! 🍕",
-        "Ho finito più di 300 videogames 🎮",
+        "Ho una passione per i video-games 🎮",
         "Mi piace cucinare 👨🏼‍🍳",
         "Allenamento almeno 3 volte a settimana 🏋🏻‍♂️",
         "Tanto altro 😁",
