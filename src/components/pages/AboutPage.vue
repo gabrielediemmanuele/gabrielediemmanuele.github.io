@@ -18,7 +18,7 @@ export default {
            nel Graphic Design in autonomia e infine, ho unito entrambi i mondi sul codice, \
            specializzandomi come !Jr Full-Stack Web-Developer presso Boolean con una predisposizione per il Front-End.\
            Oltre il codig, mi piace fare tanto altro! Scoprilo qui sotto!",
-        introImagePath: "../../../dist/images/aboutpage.png",
+        introImagePath: "../../../dist/assets/aboutpage.png",
       },
     };
   },
@@ -43,6 +43,7 @@ export default {
     :circular="true"
     :rectangular="false"
   >
+    <img src="../../../dist/assets/aboutpage.png" alt="" />
   </introPage>
   <!--Image Gallery-->
   <aboutMeImages></aboutMeImages>

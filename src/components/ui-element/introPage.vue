@@ -52,7 +52,7 @@ export default {
 .container-fluid {
   font-family: "Rubik", sans-serif;
   padding: 20px 80px 20px 80px;
-  color: rgb(3, 35, 54);
+  color: orange;
   .row {
     border-bottom: 1px solid rgb(172, 172, 172);
     padding: 30px 0;
