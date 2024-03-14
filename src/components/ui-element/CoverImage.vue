@@ -96,7 +96,7 @@ export default {
 .split-screen,
 .layer,
 .content-wrap {
-  width: 100vw;
+  width: 98.7vw;
   height: 100vh;
   min-height: 30em;
 }
