@@ -65,7 +65,7 @@ export default {
           <div class="col-sm-12 col-md-6 circle-cont">
             <img
               class="circular-image"
-              src="../../../dist/assets/contacts-profile-BYmDABDf.png"
+              src="../../../public/images/contacts-profile.png"
               alt=""
             />
           </div>
