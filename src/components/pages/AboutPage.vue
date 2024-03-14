@@ -2,6 +2,7 @@
 import introPage from "../ui-element/introPage.vue";
 import aboutMeImages from "../about-page-components/aboutImagesGallery.vue";
 import aboutMeSkills from "../about-page-components/aboutMeSkills.vue";
+import questionAndAnswers from "../about-page-components/questionAndAnswers.vue";
 import moreAboutMe from "../about-page-components/moreAboutMe.vue";
 
 export default {
@@ -26,6 +27,7 @@ export default {
     introPage,
     aboutMeImages,
     aboutMeSkills,
+    questionAndAnswers,
     moreAboutMe,
   },
 };
@@ -47,6 +49,9 @@ export default {
 
   <!--Skills Section -->
   <aboutMeSkills></aboutMeSkills>
+
+  <!-- Q&A Accordion -->
+  <questionAndAnswers></questionAndAnswers>
 
   <!--More About Me-->
   <moreAboutMe></moreAboutMe>
