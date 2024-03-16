@@ -179,7 +179,7 @@ export default {
   margin-bottom: 30px;
 }
 .carousel-cont {
-  width: 70%;
+  width: 100%;
   margin-bottom: 50px;
   box-shadow: 0px 0px 6px 1px rgb(0, 0, 0, 0.5);
   border-radius: 30px;
@@ -194,6 +194,22 @@ export default {
       height: 100% !important;
       object-fit: cover !important;
       border-radius: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carousel-inner {
+    .carousel-item {
+      height: 230px; // Imposta un'altezza fissa per tutti gli elementi del carosello
+    }
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .carousel-inner {
+    .carousel-item {
+      height: 450px; // Imposta un'altezza fissa per tutti gli elementi del carosello
     }
   }
 }
