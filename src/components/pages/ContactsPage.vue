@@ -42,7 +42,7 @@ export default {
             <div class="download-cont">
               <button class="button btn-left">
                 <a
-                  href="../../../public/images/cv-2024-gabriele-di-emmanuele.pdf"
+                  href="/images/cv-2024-gabriele-di-emmanuele.pdf"
                   download="cv-2024-gabriele-di-emmanuele"
                   >Scarica il mio CV
                   <font-awesome-icon
@@ -52,7 +52,7 @@ export default {
               </button>
               <button class="button btn-right">
                 <a
-                  href="../../../public/images/graphic-design-portfolio-2024-gabriele-di-emmanuele.pdf"
+                  href="/images/graphic-design-portfolio-2024-gabriele-di-emmanuele.pdf"
                   download="portfolio-2024-gabriele-di-emmanuele"
                   >Graphic Design Portfolio
                   <font-awesome-icon
