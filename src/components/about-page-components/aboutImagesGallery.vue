@@ -71,10 +71,10 @@ export default {
   box-shadow: 0px 0px 10px -4px rgb(81, 81, 81);
   border-radius: 10px;
   margin: 10px;
-  padding: 5px;
+  padding: 3px;
   width: 170px;
   height: 110px;
-  background-color: white;
+  background-color: orange;
 
   display: flex;
   align-items: center;

@@ -293,8 +293,8 @@ export default {
 .q-and-a-cont {
   margin-top: 40px;
   padding: 25px;
-  background-color: rgb(232, 232, 232);
-  color: rgb(3, 35, 54);
+  background-color: rgb(3, 35, 54);
+  color: orange;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -303,6 +303,7 @@ export default {
     p {
       font-size: 18px;
       font-style: italic;
+      color: rgb(141, 189, 218);
     }
   }
   #accordionExample {
