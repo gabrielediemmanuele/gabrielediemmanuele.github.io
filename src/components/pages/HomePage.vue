@@ -1,6 +1,6 @@
 <script>
 import CoverImage from "../ui-element/CoverImage.vue";
-
+import newHome from "../ui-element/newHome.vue";
 export default {
   data() {
     return {
@@ -10,12 +10,13 @@ export default {
 
   components: {
     CoverImage,
+    newHome,
   },
 };
 </script>
 
 <template>
-  <CoverImage></CoverImage>
+  <newHome></newHome>
 </template>
 
 <style lang="scss" scoped></style>
