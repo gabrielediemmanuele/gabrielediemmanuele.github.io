@@ -55,7 +55,7 @@ export default {
   background-color: rgb(3, 35, 54);
   color: white;
   .row {
-    border-bottom: 1px solid rgb(172, 172, 172);
+    border-bottom: 1px solid rgb(141, 189, 218);
     padding: 30px 0;
 
     .text-cont {
