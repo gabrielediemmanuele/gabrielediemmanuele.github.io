@@ -23,7 +23,7 @@ export default {
       <p>
         Sono un !JR <span>Full-Stack Web Developer</span> con competenze in
         <span>Graphic - UI/UX Design</span>. <br />
-        Al momento, sono concentrato nel migliorare le mie competenze sul
+        Al momento, sono concentrato nel migliorare le mie skills sul
         <span>Front-End Development</span>, <br />consolidando
         <span>Java Script</span> e i miei prossimi obbiettivi saranno
         <span>React</span> e <span>Angular</span>.
