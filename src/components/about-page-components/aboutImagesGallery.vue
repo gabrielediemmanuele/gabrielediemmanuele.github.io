@@ -51,6 +51,7 @@ export default {
 .container-fluid {
   margin: 0px;
   box-sizing: border-box;
+  background-color: rgb(3, 35, 54);
 }
 
 .container-fluid.shadow {
@@ -73,6 +74,7 @@ export default {
   padding: 5px;
   width: 170px;
   height: 110px;
+  background-color: white;
 
   display: flex;
   align-items: center;
