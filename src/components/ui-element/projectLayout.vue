@@ -29,13 +29,13 @@ export default {
   <section class="functions-section">
     <div class="container-fluid functions-cont">
       <div class="row">
-        <div class="functionality-text col-lg-6 col-md-6 col-sm-12 col-12 p-4">
+        <div class="functionality-text col-lg-6 col-md-6 col-sm-12 col-12">
           <h3 class="functions-title">Funzionalità</h3>
           <p class="functions-paragraph">
             {{ functionsParagraph }}
           </p>
         </div>
-        <div class="video-cont col-lg-6 col-md-6 col-sm-12 col-12 p-4">
+        <div class="video-cont col-lg-6 col-md-6 col-sm-12 col-12">
           <video controls class="videoplayer">
             <source :src="videoPath" type="video/mp4" />
           </video>
@@ -75,21 +75,36 @@ export default {
 
 <style lang="scss" scoped>
 .objectives-cont {
-  background-color: rgb(237, 237, 237);
-  padding: 30px 60px;
+  background-color: rgb(3, 35, 54);
+  padding: 20px 60px;
   text-align: left;
-  color: rgb(3, 35, 54);
-  margin: 30px auto;
+  h2 {
+    color: rgb(79, 149, 189);
+  }
+  p {
+    color: white;
+  }
 }
 
 .functions-cont {
-  padding: 20px;
+  background-color: rgb(3, 35, 54);
+  color: white;
+  padding: 20px 60px;
+}
+.functions-title {
+  color: rgb(79, 149, 189);
 }
 
 .videoplayer {
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0px 0px 6px 1px rgba(136, 136, 136, 0.5);
+  //box-shadow: 0px 0px 6px 1px rgba(136, 136, 136, 0.5);
+}
+
+.video-cont {
+  display: flex;
+  align-items: center;
+  padding: 30px;
 }
 
 .images-cont {
@@ -109,8 +124,6 @@ export default {
 
   .gallery-row {
     padding: 30px;
-    .col-lg-3 {
-    }
   }
 }
 .card {
