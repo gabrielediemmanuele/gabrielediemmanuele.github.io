@@ -69,10 +69,14 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio-cont {
-  color: rgb(3, 35, 54);
+  background-color: rgb(3, 35, 54);
+  color: white;
   padding: 50px;
 
   //box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
+  h1 {
+    color: rgb(79, 149, 189);
+  }
   p {
     font-style: italic;
   }
