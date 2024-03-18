@@ -82,9 +82,10 @@ export default {
   align-items: center;
 }
 .contacts-container {
+  background-color: rgb(3, 35, 54);
   font-family: "Rubik", sans-serif;
   color: rgb(3, 35, 54);
-  margin: 20px 40px;
+  padding: 20px 40px;
   .container-fluid {
     padding: 30px;
     .row {
@@ -94,12 +95,14 @@ export default {
       .col-sm-12 {
         h1 {
           font-size: 80px;
+          color: orange;
         }
         h3 {
           font-size: 30px;
           font-weight: 400;
           margin: 20px 0 20px 0;
           font-style: italic;
+          color: rgb(79, 149, 189);
         }
         /* icons */
         .icons-cont {
@@ -108,7 +111,7 @@ export default {
           .fa-github,
           .fa-envelope {
             font-size: 45px;
-            color: rgb(3, 35, 54);
+            color: white;
             &:hover {
               color: orange;
               cursor: pointer;
@@ -121,19 +124,23 @@ export default {
 
         .download-cont {
           .button {
-            border-radius: 20px;
-            padding: 10px 15px;
-            border: none;
-            margin-bottom: 10px;
-            background-color: rgb(3, 35, 54);
+            border: 1.5px solid orange;
+            margin-bottom: 20px;
+            padding: 8px 25px;
+            font-size: 15px;
+            color: orange;
+            transition: linear 5ms;
+            background-color: transparent;
+            border-radius: 12px;
             &:hover {
-              background-color: orange;
+              color: white;
+              border: 1.5px solid rgb(255, 255, 255);
               a {
-                color: rgb(3, 35, 54);
+                color: rgb(255, 255, 255);
               }
             }
             a {
-              color: white;
+              color: orange;
               text-decoration: none;
               .fa-solid {
                 margin-left: 2px;
@@ -146,7 +153,6 @@ export default {
         }
         .circular-image {
           width: 80%;
-          box-shadow: 0px 0px 6px 2px rgba(166, 166, 166, 0.5);
           border-radius: 50%;
           margin-top: 25px;
           object-fit: cover;

@@ -52,25 +52,30 @@ export default {
 .container-fluid {
   font-family: "Rubik", sans-serif;
   padding: 20px 80px 20px 80px;
-  color: rgb(3, 35, 54);
+  background-color: rgb(3, 35, 54);
+  color: white;
   .row {
-    border-bottom: 1px solid rgb(172, 172, 172);
+    border-bottom: 1px solid rgb(141, 189, 218);
     padding: 30px 0;
 
     .text-cont {
       font-size: 20px;
       h1 {
         font-size: 80px;
+        color: orange;
       }
       h3 {
         font-size: 30px;
         font-weight: 400;
         margin: 20px 0 20px 0;
         font-style: italic;
+        color: rgb(141, 189, 218);
       }
       p {
         font-size: 18px;
         font-style: italic;
+        color: white;
+        letter-spacing: 1px;
       }
     }
 

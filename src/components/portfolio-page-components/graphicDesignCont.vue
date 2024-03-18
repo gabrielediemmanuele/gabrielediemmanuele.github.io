@@ -169,12 +169,17 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(3, 35, 54);
 }
 .gd-text-cont {
+  h1 {
+    color: rgb(79, 149, 189);
+  }
   p {
     font-size: 18px;
     font-weight: 300;
     font-style: italic;
+    color: white;
   }
   margin-bottom: 30px;
 }

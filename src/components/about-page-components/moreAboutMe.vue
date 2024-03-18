@@ -57,10 +57,10 @@ export default {
 .container-fluid {
   background-color: rgb(57, 68, 117);
   color: white;
+  padding-top: 20px;
   .row-skills {
     display: flex;
     align-content: center;
-    box-shadow: 0px 4px 5px 0px rgb(191, 191, 191);
 
     .col-lg-6 {
       display: flex;
