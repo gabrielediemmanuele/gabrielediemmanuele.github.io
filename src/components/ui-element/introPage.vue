@@ -12,6 +12,7 @@ export default {
     imgPath: String,
     circular: Boolean,
     rectangular: Boolean,
+    imageStyles: Object,
   },
   computed: {
     imageClasses() {
@@ -41,7 +42,12 @@ export default {
       </div>
       <div class="col-sm-12 col-md-6">
         <div class="image-cont">
-          <img :src="imgPath" :class="imageClasses" alt="Immagine Gabriele" />
+          <img
+            :src="imgPath"
+            :class="imageClasses"
+            :style="imageStyles"
+            alt="Immagine Gabriele"
+          />
         </div>
       </div>
     </div>
