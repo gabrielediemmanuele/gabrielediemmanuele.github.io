@@ -29,6 +29,7 @@ export default {
         } else if (guess === this.secretNumber) {
           this.playing = false;
           this.showMessage("🎉 Correct Number, click Again Button");
+          this.playSound();
           this.setStyles();
           this.highscore = Math.max(this.highscore, this.score);
         } else if (guess !== this.secretNumber) {
@@ -42,7 +43,8 @@ export default {
             this.$refs.guessedNumber.style.color = "red";
             this.$refs.title.style.color = "red";
             this.$refs.message.style.color = "red";
-            this.showMessage("You lose, try again! Click on Reset");
+            this.playSound();
+            this.showMessage("You lose, try again! Click on Reset!");
             this.score = 0;
           }
         }
@@ -51,7 +53,7 @@ export default {
 
     resetGame() {
       this.softReset();
-      alert("You have reset the game, your highscore starts again from 0!");
+      alert("You have reset the game, your highscore starts again from 0 !");
       alert("Good luck ! 😁");
       this.highscore = 0;
     },
@@ -79,6 +81,13 @@ export default {
         this.$refs.message.style.color = "limegreen";
       }
     },
+    playSound() {
+      if (this.guess === this.secretNumber) {
+        this.$refs.rightAnswer.play();
+      } else {
+        this.$refs.lose.play();
+      }
+    },
   },
 };
 </script>
@@ -88,7 +97,7 @@ export default {
     <header>
       <div class="container-fluid header">
         <div class="btn-cont">
-          <button class="btn again" @click="softReset">Again!</button>
+          <button class="btn again" @click="softReset">Play Again</button>
           <button class="btn reset" @click="resetGame">Reset</button>
         </div>
         <p class="between">(Between 1 and 20)</p>
@@ -104,7 +113,9 @@ export default {
           <div class="col-sm-12 col-md-6 col-lg-6">
             <section class="left">
               <input type="number" class="guess" v-model="guess" />
-              <button class="btn check" @click="checkGuess">Check!</button>
+              <button class="btn check" @click="checkGuess">
+                Check Number
+              </button>
             </section>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6">
@@ -121,6 +132,8 @@ export default {
         </div>
       </div>
     </main>
+    <audio ref="rightAnswer" src="/images/rightanswer.mp3"></audio>
+    <audio ref="lose" src="/images/lose.mp3"></audio>
   </div>
 </template>
 
