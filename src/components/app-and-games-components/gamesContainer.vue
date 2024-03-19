@@ -9,7 +9,7 @@ export default {
           gameImage: "/images/guess-my-number.png",
           gameTitle: "Guess My Number",
           gameDescription: "Indovina il numero, ma attento, hai 20 tentativi!",
-          gameRoute: "-",
+          gameRoute: "guessMyNumber",
         },
       ],
     };

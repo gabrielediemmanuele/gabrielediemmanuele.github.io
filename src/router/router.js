@@ -12,6 +12,9 @@ import frontEndAdvanced from "../components/portfolio-page-components/projects-p
 import anidio from "../components/portfolio-page-components/projects-pages/anidio.vue";
 import deliveboo from "../components/portfolio-page-components/projects-pages/deliveboo.vue";
 
+//*Apps and games Pages*/
+
+import guessMyNumber from "../components/app-and-games-components/games/guessMyNumber.vue";
 const router = createRouter({
   history: createWebHistory(),
 
@@ -60,6 +63,11 @@ const router = createRouter({
       name: "appandgames",
       path: "/appandgames",
       component: AppAndGamesPage,
+    },
+    {
+      name: "guessMyNumber",
+      path: "/guessMyNumber",
+      component: guessMyNumber,
     },
   ],
 });
