@@ -153,7 +153,6 @@ export default {
 /* LAYOUT */
 header {
   padding: 15px 30px;
-  height: 20vh;
   .container-fluid.header {
     width: 100%;
     display: flex;
@@ -161,7 +160,7 @@ header {
     justify-content: space-between;
 
     .between {
-      font-size: 20px;
+      font-size: 18px;
       color: orange;
       &:hover {
         color: white;
@@ -171,7 +170,6 @@ header {
 }
 
 main {
-  height: 80vh;
   .container-fluid.center {
     display: flex;
     flex-direction: column;
@@ -334,5 +332,46 @@ main {
   border-style: solid;
   border-radius: 10px;
   animation: rainbow 5s infinite alternate;
+}
+
+//media query
+@media screen and (max-width: 766px) {
+  .btn-cont {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .btn-cont {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container-fluid.header {
+    flex-direction: column;
+    .btn-cont {
+      flex-direction: row;
+    }
+    .between {
+      margin: 20px 0px;
+    }
+  }
+  .left {
+    padding: 0px 60px !important;
+  }
+  .right {
+    text-align: center;
+    padding: 20px 60px !important;
+  }
+  .container-fluid.center {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+}
+@media screen and (min-width: 1201px) {
 }
 </style>
