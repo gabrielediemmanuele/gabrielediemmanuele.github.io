@@ -6,9 +6,10 @@ export default {
     return {
       apps: [
         {
-          appImage: "/images/cover-frontend-project.png",
-          appTitle: "-",
-          appDescription: "-",
+          appImage: "/images/bmi-calculator-image.png",
+          appTitle: "BMI - Calculator (WORK IN PROGRESS ⚒)",
+          appDescription:
+            "Vuoi sapere il tuo indice di massa corporea ? Prova Subito. ",
           appRoute: "-",
         },
       ],

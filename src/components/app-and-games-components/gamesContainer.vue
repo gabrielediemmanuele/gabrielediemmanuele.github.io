@@ -6,9 +6,9 @@ export default {
     return {
       games: [
         {
-          gameImage: "/images/cover-frontend-project.png",
-          gameTitle: "-",
-          gameDescription: "-",
+          gameImage: "/images/guess-my-number.png",
+          gameTitle: "Guess My Number",
+          gameDescription: "Indovina il numero, ma attento, hai 20 tentativi!",
           gameRoute: "-",
         },
       ],
