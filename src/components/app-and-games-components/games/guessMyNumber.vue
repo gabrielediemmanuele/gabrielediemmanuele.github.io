@@ -4,13 +4,82 @@
 export default {
   data() {
     return {
-      title: "Hello world",
+      guess: null,
+      secretNumber: Math.floor(Math.random() * 20) + 1,
+      score: 20,
+      highscore: 0,
+      playing: true,
     };
   },
 
-  // components: {
-  //   MyComponent,
-  // },
+  computed: {
+    guessedNumber() {
+      return this.playing ? "?" : this.secretNumber;
+    },
+  },
+
+  methods: {
+    checkGuess() {
+      const guess = Number(this.guess);
+      if (this.playing) {
+        if (!guess) {
+          this.showMessage("⛔ No Number");
+        } else if (guess > 20) {
+          this.showMessage("⛔ Only numbers between 1 and 20 !");
+        } else if (guess === this.secretNumber) {
+          this.playing = false;
+          this.showMessage("🎉 Correct Number, click Again Button");
+          this.setStyles();
+          this.highscore = Math.max(this.highscore, this.score);
+        } else if (guess !== this.secretNumber) {
+          if (this.score > 1) {
+            this.showMessage(
+              guess > this.secretNumber ? "Too High !" : "Too Low !"
+            );
+            this.score--;
+          } else {
+            this.playing = false;
+            this.$refs.guessedNumber.style.color = "red";
+            this.$refs.title.style.color = "red";
+            this.$refs.message.style.color = "red";
+            this.showMessage("You lose, try again! Click on Reset");
+            this.score = 0;
+          }
+        }
+      }
+    },
+
+    resetGame() {
+      this.softReset();
+      alert("You have reset the game, your highscore starts again from 0!");
+      alert("Good luck ! 😁");
+      this.highscore = 0;
+    },
+    softReset() {
+      this.playing = true;
+      this.score = 20;
+      this.secretNumber = Math.floor(Math.random() * 20) + 1;
+      this.showMessage("Start Guessing...");
+      this.guess = null;
+      this.setStyles("reset");
+    },
+
+    showMessage(message) {
+      this.$refs.message.textContent = message;
+    },
+
+    setStyles(type) {
+      if (type === "reset") {
+        this.$refs.guessedNumber.style.color = "white";
+        this.$refs.title.style.color = "white";
+        this.$refs.message.style.color = "white";
+      } else {
+        this.$refs.guessedNumber.style.color = "limegreen";
+        this.$refs.title.style.color = "limegreen";
+        this.$refs.message.style.color = "limegreen";
+      }
+    },
+  },
 };
 </script>
 
@@ -19,31 +88,33 @@ export default {
     <header>
       <div class="container-fluid header">
         <div class="btn-cont">
-          <button class="btn again">Again!</button>
-          <button class="btn reset">Reset</button>
+          <button class="btn again" @click="softReset">Again!</button>
+          <button class="btn reset" @click="resetGame">Reset</button>
         </div>
         <p class="between">(Between 1 and 20)</p>
       </div>
     </header>
     <main>
       <div class="container-fluid center">
-        <h1>Guess My Number!</h1>
-        <div class="number">?</div>
+        <h1 ref="title">Guess My Number!</h1>
+        <div class="number" ref="guessedNumber">{{ guessedNumber }}</div>
       </div>
       <div class="container-fluid left-right">
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-6">
             <section class="left">
-              <input type="number" class="guess" />
-              <button class="btn check">Check!</button>
+              <input type="number" class="guess" v-model="guess" />
+              <button class="btn check" @click="checkGuess">Check!</button>
             </section>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6">
             <section class="right">
-              <p class="message">Start guessing...</p>
-              <p class="label-score">💯 Score: <span class="score">20</span></p>
+              <p ref="message" class="message">Start guessing...</p>
+              <p class="label-score">
+                💯 Score: <span class="score">{{ score }}</span>
+              </p>
               <p class="label-highscore">
-                🥇 Highscore: <span class="highscore">0</span>
+                🥇 Highscore: <span class="highscore">{{ highscore }}</span>
               </p>
             </section>
           </div>
@@ -75,6 +146,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .between {
+      font-size: 20px;
+      color: orange;
+      &:hover {
+        color: white;
+      }
+    }
   }
 }
 
@@ -110,7 +189,7 @@ main {
         padding: 0px 130px;
         .guess {
           background: none;
-          border: 4px solid #eee;
+          border: 4px solid white;
           display: block;
           margin-bottom: 20px;
           border-radius: 20px;
@@ -121,7 +200,9 @@ main {
           color: rgb(255, 255, 255);
           font-size: 50px;
           text-align: center;
-          overflow-y: hidden;
+          &:hover {
+            border: 4px solid orange;
+          }
         }
       }
       /* right  */
