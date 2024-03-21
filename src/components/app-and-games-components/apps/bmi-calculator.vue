@@ -44,6 +44,9 @@ export default {
     calculateBMI() {
       if (this.weight && this.height) {
         this.showResult = true;
+        this.showWarning = false;
+      } else {
+        this.showWarning = true;
       }
     },
     calculateBMIvalue() {
@@ -51,6 +54,7 @@ export default {
       return bmi.toFixed(2);
     },
     reset() {
+      this.showWarning = false;
       this.showResult = false;
       this.weight = null;
       this.height = null;
