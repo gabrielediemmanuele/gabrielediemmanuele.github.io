@@ -38,6 +38,22 @@ export default {
       }
     },
   },
+  methods: {
+    calculateBMI() {
+      if (this.weight && this.height) {
+        this.showResult = true;
+      }
+    },
+    calculateBMIvalue() {
+      const bmi = this.weight / (this.height * this.height);
+      return bmi.toFixed(2);
+    },
+    reset() {
+      this.showResult = false;
+      this.weight = null;
+      this.height = null;
+    },
+  },
 };
 </script>
 
