@@ -4,13 +4,40 @@
 export default {
   data() {
     return {
-      title: "Hello world",
+      weight: null,
+      height: null,
+      showResult: false,
+      maxWeight: 200,
+      maxHeight: 2.5,
     };
   },
 
-  // components: {
-  //   MyComponent,
-  // },
+  computed: {
+    resultImage() {
+      const bmi = this.calculateBMIvalue();
+      if (bmi < 18.5) {
+        return "Underweight.jpg";
+      } else if (bmi >= 18.5 && bmi <= 24.9) {
+        return "Healthy-Weight.jpg";
+      } else if (bmi >= 25 && bmi <= 29.9) {
+        return "Overweight.jpg";
+      } else {
+        return "Obesity.jpg";
+      }
+    },
+    bmiMessage() {
+      const bmi = this.calculateBMIvalue();
+      if (bmi < 18.5) {
+        return "Serve più massa!";
+      } else if (bmi >= 18.5 && bmi <= 24.9) {
+        return "Sei in gran salute, complimenti!";
+      } else if (bmi >= 25 && bmi <= 29.9) {
+        return "Sei un pò in sovrappeso, fai un pò di attività fisica!";
+      } else {
+        return "Sei in uno stato di Obesità, prendi provvedimento al più presto!";
+      }
+    },
+  },
 };
 </script>
 
