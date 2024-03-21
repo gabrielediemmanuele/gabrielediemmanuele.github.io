@@ -1,6 +1,4 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
-
 export default {
   data() {
     return {
@@ -9,52 +7,62 @@ export default {
       showResult: false,
       showWarning: false,
       maxWeight: 200,
+      minWeight: 0,
       maxHeight: 2.5,
+      minHeight: 0,
     };
   },
-
+  //image, message and value
   computed: {
     resultImage() {
-      const bmi = this.calculateBMIvalue();
+      const bmi = this.calculateBMIValue();
       if (bmi < 18.5) {
-        return "Underweight.jpg";
-      } else if (bmi >= 18.5 && bmi <= 24.9) {
-        return "Healthy-Weight.jpg";
-      } else if (bmi >= 25 && bmi <= 29.9) {
-        return "Overweight.jpg";
+        return "underweight.jpg";
+      } else if (bmi >= 18.5 && bmi < 25) {
+        return "normal.jpg";
       } else {
-        return "Obesity.jpg";
+        return "overweight.jpg";
       }
     },
-
     bmiMessage() {
-      const bmi = this.calculateBMIvalue();
+      const bmi = this.calculateBMIValue();
       if (bmi < 18.5) {
-        return "Serve più massa!";
-      } else if (bmi >= 18.5 && bmi <= 24.9) {
-        return "Sei in gran salute, complimenti!";
-      } else if (bmi >= 25 && bmi <= 29.9) {
-        return "Sei un pò in sovrappeso, fai un pò di attività fisica!";
+        return "Serve più massa";
+      } else if (bmi >= 18.5 && bmi < 25) {
+        return "Il tuo peso forma è perfetto";
       } else {
-        return "Sei in uno stato di Obesità, prendi provvedimento al più presto!";
+        return "Dovresti perdere peso";
       }
+    },
+    bmiValue() {
+      return this.calculateBMIValue();
     },
   },
+  //calculate bmi to show result or warning + calculate bmi-value and reset.
   methods: {
     calculateBMI() {
-      if (this.weight && this.height) {
+      if (
+        this.weight &&
+        this.height &&
+        this.weight >= this.minWeight &&
+        this.weight <= this.maxWeight &&
+        this.height >= this.minHeight &&
+        this.height <= this.maxHeight
+      ) {
         this.showResult = true;
         this.showWarning = false;
       } else {
         this.showWarning = true;
       }
     },
-    calculateBMIvalue() {
-      const bmi = this.weight / (this.height * this.height);
-      return bmi.toFixed(2);
+    calculateBMIValue() {
+      if (this.weight && this.height) {
+        const bmi = this.weight / (this.height * this.height);
+        return bmi.toFixed(2);
+      }
+      return null;
     },
     reset() {
-      this.showWarning = false;
       this.showResult = false;
       this.weight = null;
       this.height = null;
@@ -64,33 +72,69 @@ export default {
 </script>
 
 <template>
-  <!-- Inputs container -->
   <div class="bmi-calculator" v-if="!showResult">
     <input
       v-model.number="weight"
       type="number"
-      placeholder="Peso (Kg)"
+      placeholder="Peso (kg) es. 60.5"
       :max="maxWeight"
+      :min="minWeight"
       required
     />
+    <p
+      v-if="weight && (weight < minWeight || weight > maxWeight)"
+      class="error"
+    >
+      Il peso deve essere compreso tra {{ minWeight }} kg e {{ maxWeight }} kg
+    </p>
     <input
       v-model.number="height"
       type="number"
-      placeholder="Altezza (m, cm)"
+      placeholder="Altezza (metri) Es. 1.20 "
       :max="maxHeight"
+      :min="minHeight"
       required
     />
-    <button @click="calculateBMI">Get BMI</button>
-    <p v-if="showWarning" class="warning">
-      Inserisci i dati correttamente uno o più campi sono vuoti.
+    <p
+      v-if="height && (height < minHeight || height > maxHeight)"
+      class="error"
+    >
+      L'altezza deve essere compresa tra {{ minHeight }} metri e
+      {{ maxHeight }} metri
     </p>
+    <button @click="calculateBMI">Calcola BMI</button>
+    <p v-if="showWarning" class="warning">Inserisci i dati correttamente</p>
   </div>
-  <!-- result container  -->
-  <div v-else>
+  <div class="result-container" v-else>
     <img :src="resultImage" alt="BMI Image" />
     <p>{{ bmiMessage }}</p>
-    <button @click="reset">Back</button>
+    <p>Il tuo indice di massa corporea (BMI) è: {{ bmiValue }}</p>
+    <button @click="reset">Calcola di nuovo</button>
   </div>
 </template>
+<style lang="scss" scoped>
+.bmi-calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  * {
+    margin: 10px;
+  }
+  input {
+    width: 250px;
+  }
+}
+.result-container {
+  * {
+    margin: 10px;
+  }
+}
 
-<style lang="scss" scoped></style>
+.error {
+  color: red;
+}
+
+.warning {
+  color: rgb(255, 145, 0);
+}
+</style>
