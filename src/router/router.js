@@ -15,6 +15,7 @@ import deliveboo from "../components/portfolio-page-components/projects-pages/de
 //*Apps and games Pages*/
 
 import guessMyNumber from "../components/app-and-games-components/games/guessMyNumber.vue";
+import bmiCalculator from "../components/app-and-games-components/apps/bmi-calculator.vue";
 const router = createRouter({
   history: createWebHistory(),
 
