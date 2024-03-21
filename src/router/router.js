@@ -69,6 +69,11 @@ const router = createRouter({
       path: "/guessMyNumber",
       component: guessMyNumber,
     },
+    {
+      name: "bmiCalculator",
+      path: "/bmiCalculator",
+      component: bmiCalculator,
+    },
   ],
 });
 

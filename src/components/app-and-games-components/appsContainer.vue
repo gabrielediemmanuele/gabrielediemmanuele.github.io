@@ -10,7 +10,7 @@ export default {
           appTitle: "BMI - Calculator (WORK IN PROGRESS ⚒)",
           appDescription:
             "Vuoi sapere il tuo indice di massa corporea ? Prova Subito. ",
-          appRoute: "-",
+          appRoute: "bmiCalculator",
         },
       ],
     };
