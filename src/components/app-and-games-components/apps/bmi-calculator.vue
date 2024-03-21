@@ -7,6 +7,7 @@ export default {
       weight: null,
       height: null,
       showResult: false,
+      showWarning: false,
       maxWeight: 200,
       maxHeight: 2.5,
     };
@@ -25,6 +26,7 @@ export default {
         return "Obesity.jpg";
       }
     },
+
     bmiMessage() {
       const bmi = this.calculateBMIvalue();
       if (bmi < 18.5) {
@@ -75,6 +77,9 @@ export default {
       required
     />
     <button @click="calculateBMI">Get BMI</button>
+    <p v-if="showWarning" class="warning">
+      Inserisci i dati correttamente uno o più campi sono vuoti.
+    </p>
   </div>
   <!-- result container  -->
   <div v-else>
