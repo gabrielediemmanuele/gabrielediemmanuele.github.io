@@ -7,9 +7,9 @@ export default {
       showResult: false,
       showWarning: false,
       maxWeight: 200,
-      minWeight: 0,
+      minWeight: 1,
       maxHeight: 2.5,
-      minHeight: 0,
+      minHeight: 0.1,
     };
   },
   //image, message and value
@@ -17,21 +17,21 @@ export default {
     resultImage() {
       const bmi = this.calculateBMIValue();
       if (bmi < 18.5) {
-        return "underweight.jpg";
+        return "/images/underweight.png";
       } else if (bmi >= 18.5 && bmi < 25) {
-        return "normal.jpg";
+        return "/images/healty.png";
       } else {
-        return "overweight.jpg";
+        return "/images/overweight.png";
       }
     },
     bmiMessage() {
       const bmi = this.calculateBMIValue();
       if (bmi < 18.5) {
-        return "Serve più massa";
+        return "Serve più massa! Forza! 💪🏻";
       } else if (bmi >= 18.5 && bmi < 25) {
-        return "Il tuo peso forma è perfetto";
+        return "Il tuo peso forma è perfetto! 😎";
       } else {
-        return "Dovresti perdere peso";
+        return "Dovresti perdere peso! Impegnati! 🏃🏻‍♂️🏃🏻‍♀️";
       }
     },
     bmiValue() {
@@ -83,7 +83,7 @@ export default {
             <input
               v-model.number="weight"
               type="number"
-              placeholder="Peso (kg) es. 60.5"
+              placeholder="Peso (kg) ex: 60.5"
               :max="maxWeight"
               :min="minWeight"
               required
@@ -92,13 +92,13 @@ export default {
               v-if="weight && (weight < minWeight || weight > maxWeight)"
               class="error"
             >
-              Il peso deve essere compreso tra {{ minWeight }} kg e
+              *Il peso deve essere compreso tra {{ minWeight }} kg e
               {{ maxWeight }} kg
             </p>
             <input
               v-model.number="height"
               type="number"
-              placeholder="Altezza (metri) Es. 1.20 "
+              placeholder="Altezza (metri) ex: 1.20 "
               :max="maxHeight"
               :min="minHeight"
               required
@@ -107,32 +107,45 @@ export default {
               v-if="height && (height < minHeight || height > maxHeight)"
               class="error"
             >
-              L'altezza deve essere compresa tra {{ minHeight }} metri e
+              *L'altezza deve essere compresa tra {{ minHeight }} metri e
               {{ maxHeight }} metri
             </p>
-            <button @click="calculateBMI">Calcola BMI</button>
             <p v-if="showWarning" class="warning">
-              Inserisci i dati correttamente
+              *Inserisci i dati correttamente: max 1 - 200kg / 0.1 - 2.5m
             </p>
+            <button @click="calculateBMI">Calcola BMI</button>
           </div>
           <div class="coach-container col-sm-12 col-md-6 col-lg-6">
             <img src="/images/coach.png" alt="Woman and Man Sportive Coach" />
             <h3>About BMI-Calculator</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              voluptatibus nihil deleniti ipsam quos iure perspiciatis maxime
-              magnam, aut sit dolorem minima odit iste consequuntur. Officia
-              aliquam dolorum suscipit sunt.
+              L'indice di massa corporea (abbreviato IMC o BMI, dall'inglese
+              body mass index) è un dato biometrico, espresso come rapporto tra
+              peso e quadrato dell'altezza di un individuo ed è utilizzato come
+              un indicatore dello stato di peso forma. Tuttavia, è un dato
+              relativo in quanto non tiene conto della massa magra o grassa
+              dell'individuo. Per questo ci si deve rivolgere a dei
+              professionisti.
             </p>
           </div>
         </div>
       </div>
       <!--! CONTENT DOPO IL CHECK -->
       <div class="result-container" v-else>
-        <img :src="resultImage" alt="BMI Image" />
-        <p>{{ bmiMessage }}</p>
-        <p>Il tuo indice di massa corporea (BMI) è: {{ bmiValue }}</p>
-        <button @click="reset">Calcola di nuovo</button>
+        <div class="row">
+          <div class="text-cont col-sm-12 col-md-6 col-lg-6">
+            <p class="bmi-message">{{ bmiMessage }}</p>
+            <p class="result">
+              Il tuo indice di massa corporea (BMI) è: <br /><span>{{
+                bmiValue
+              }}</span>
+            </p>
+            <button @click="reset">Calcola di nuovo</button>
+          </div>
+          <div class="result-image col-sm-12 col-md-6 col-lg-6">
+            <img :src="resultImage" alt="BMI Image" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -143,7 +156,6 @@ export default {
   padding: 50px 0px;
   box-sizing: border-box;
   width: 100%;
-  height: 100vh;
   background-image: url("/images/BMI-Background.jpg");
   background-size: cover;
   background-position: center;
@@ -156,6 +168,7 @@ export default {
   background-color: rgb(0, 0, 0, 0.8);
   border: 1.5px solid rgb(0, 153, 255);
   padding: 20px;
+  margin-bottom: 25px; // serve per evitare il bordo bianco..
 }
 
 .bmi-calculator-form {
@@ -165,6 +178,7 @@ export default {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding: 0 10px;
 
       h1 {
         font-size: 60px;
@@ -173,11 +187,42 @@ export default {
       }
       span {
         font-size: 20px;
+        color: white;
+        font-style: oblique;
+      }
+      input {
+        width: 80%;
+        margin: 20px 0px;
+        &:focus {
+          border: 5px solid rgb(0, 153, 255) !important;
+        }
+      }
+
+      button {
+        border: 1.5px solid rgb(0, 153, 255);
+        background-color: transparent;
+        color: rgb(0, 153, 255);
+        padding: 10px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-bottom: 25px;
+
+        &:hover {
+          border-color: rgb(108, 223, 255);
+          color: rgb(108, 223, 255);
+        }
       }
     }
   }
-  input {
-    width: 250px;
+  text-align: center;
+  .error {
+    color: red;
+    font-style: oblique;
+  }
+
+  .warning {
+    color: rgb(255, 145, 0);
+    font-style: oblique;
   }
 }
 
@@ -188,22 +233,60 @@ export default {
   justify-content: center;
   color: white;
   text-align: justify;
+  padding: 0 30px;
   img {
     width: 250px;
+    margin-bottom: 10px;
   }
 }
 
 .result-container {
-  * {
-    margin: 10px;
+  .row {
+    justify-content: space-around;
+    .text-cont {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .bmi-message {
+        color: rgb(0, 153, 255);
+        font-size: 30px;
+      }
+      p {
+        color: white;
+        font-size: 18px;
+
+        span {
+          font-size: 45px;
+          color: rgb(0, 153, 255);
+        }
+      }
+      button {
+        border: 1.5px solid rgb(0, 153, 255);
+        background-color: transparent;
+        color: rgb(0, 153, 255);
+        padding: 10px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-bottom: 25px;
+
+        &:hover {
+          border-color: rgb(108, 223, 255);
+          color: rgb(108, 223, 255);
+        }
+      }
+    }
+    .result-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 250px;
+        margin-bottom: 10px;
+      }
+    }
   }
-}
-
-.error {
-  color: red;
-}
-
-.warning {
-  color: rgb(255, 145, 0);
 }
 </style>
