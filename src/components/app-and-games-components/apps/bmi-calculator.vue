@@ -29,7 +29,7 @@ export default {
       if (bmi < 18.5) {
         return "Serve più massa! Forza! 💪🏻";
       } else if (bmi >= 18.5 && bmi < 25) {
-        return "Il tuo peso forma è perfetto! 😎";
+        return "Il tuo peso forma è perfetto! 😎\n Continua cosi!";
       } else {
         return "Dovresti perdere peso! Impegnati! 🏃🏻‍♂️🏃🏻‍♀️";
       }
@@ -260,7 +260,7 @@ export default {
 
         span {
           font-size: 45px;
-          color: rgb(0, 153, 255);
+          color: orange;
         }
       }
       button {
