@@ -7,7 +7,7 @@ export default {
       apps: [
         {
           appImage: "/images/bmi-calculator-image.png",
-          appTitle: "BMI - Calculator (WORK IN PROGRESS ⚒)",
+          appTitle: "BMI-Calculator",
           appDescription:
             "Vuoi sapere il tuo indice di massa corporea ? Prova Subito. ",
           appRoute: "bmiCalculator",
