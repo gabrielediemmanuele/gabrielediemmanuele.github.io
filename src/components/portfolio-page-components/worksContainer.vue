@@ -29,6 +29,12 @@ export default {
           projectDescription: "Front-End (Vue), Back-End (Laravel)",
           projectRoute: "deliveboo",
         },
+        {
+          projectImage: "/images/bankist-v1-js.png",
+          projectTitle: "Bankist-V1-Js",
+          projectDescription: "Java Script [Array Methods]",
+          projectRoute: "bankistV1Js",
+        },
       ],
     };
   },

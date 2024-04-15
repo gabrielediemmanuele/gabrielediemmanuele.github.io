@@ -11,6 +11,7 @@ import frontEndBegin from "../components/portfolio-page-components/projects-page
 import frontEndAdvanced from "../components/portfolio-page-components/projects-pages/frontEndAdvanced.vue";
 import anidio from "../components/portfolio-page-components/projects-pages/anidio.vue";
 import deliveboo from "../components/portfolio-page-components/projects-pages/deliveboo.vue";
+import bankistV1Js from "../components/portfolio-page-components/projects-pages/bankistV1Js.vue";
 
 //*Apps and games Pages*/
 
@@ -74,6 +75,11 @@ const router = createRouter({
       name: "bmiCalculator",
       path: "/bmiCalculator",
       component: bmiCalculator,
+    },
+    {
+      name: "bankistV1Js",
+      path: "/bankistV1Js",
+      component: bankistV1Js,
     },
   ],
 });
