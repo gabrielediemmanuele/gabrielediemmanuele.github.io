@@ -35,6 +35,12 @@ export default {
           projectDescription: "Java Script [Array Methods]",
           projectRoute: "bankistV1Js",
         },
+        {
+          projectImage: "/images/mapty-js-cover.png",
+          projectTitle: "Mapty Js - Workout",
+          projectDescription: "Java Script - OOP - Geolocal. LEAFLET Library",
+          projectRoute: "maptyJs",
+        },
       ],
     };
   },
