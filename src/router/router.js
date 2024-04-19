@@ -12,6 +12,7 @@ import frontEndAdvanced from "../components/portfolio-page-components/projects-p
 import anidio from "../components/portfolio-page-components/projects-pages/anidio.vue";
 import deliveboo from "../components/portfolio-page-components/projects-pages/deliveboo.vue";
 import bankistV1Js from "../components/portfolio-page-components/projects-pages/bankistV1Js.vue";
+import maptyJs from "../components/portfolio-page-components/projects-pages/maptyJs.vue";
 
 //*Apps and games Pages*/
 
@@ -80,6 +81,11 @@ const router = createRouter({
       name: "bankistV1Js",
       path: "/bankistV1Js",
       component: bankistV1Js,
+    },
+    {
+      name: "maptyJs",
+      path: "/maptyJs",
+      component: maptyJs,
     },
   ],
 });
