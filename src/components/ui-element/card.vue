@@ -22,9 +22,9 @@ export default {
           <h3>{{ cardTitle }}</h3>
           <span>{{ cardDescription }}</span>
         </div>
-        <router-link :to="cardRoute" class="router-card"
+        <!--   <router-link :to="cardRoute" class="router-card"
           ><button class="btn">></button></router-link
-        >
+        > -->
       </div>
     </div>
   </router-link>
@@ -42,6 +42,7 @@ export default {
   transition: transform 0.2s; /* Animation */
   z-index: 2;
   &:hover {
+    box-shadow: 0px 0px 1px 8px orange;
     transform: scale(1.02);
     .card-contents {
       .router-card {
