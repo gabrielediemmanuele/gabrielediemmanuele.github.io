@@ -13,6 +13,7 @@ import anidio from "../components/portfolio-page-components/projects-pages/anidi
 import deliveboo from "../components/portfolio-page-components/projects-pages/deliveboo.vue";
 import bankistV1Js from "../components/portfolio-page-components/projects-pages/bankistV1Js.vue";
 import maptyJs from "../components/portfolio-page-components/projects-pages/maptyJs.vue";
+import forkify from "../components/portfolio-page-components/projects-pages/forkify.vue";
 
 //*Apps and games Pages*/
 
