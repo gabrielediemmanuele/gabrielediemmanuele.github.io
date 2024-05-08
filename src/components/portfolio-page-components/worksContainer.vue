@@ -41,6 +41,12 @@ export default {
           projectDescription: "Java Script - OOP - Geolocal. LEAFLET Library",
           projectRoute: "maptyJs",
         },
+        {
+          projectImage: "/images/forkify_cover_img.png",
+          projectTitle: "Forkify // 100,000 + recipes",
+          projectDescription: "Java Script, OOP, API, AJAX, localStorage",
+          projectRoute: "forkify",
+        },
       ],
     };
   },

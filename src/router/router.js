@@ -87,6 +87,11 @@ const router = createRouter({
       path: "/maptyJs",
       component: maptyJs,
     },
+    {
+      name: "forkify",
+      path: "/forkify",
+      component: forkify,
+    },
   ],
 });
 
